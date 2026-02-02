@@ -68,7 +68,7 @@
 * 📚 **[wSearch](https://github.com/jscraik/wSearch)**
 * 🔍 **[zSearch](https://github.com/jscraik/zSearch)** - Z.AI capabilities CLI and MCP server for agents and automation
 * 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
-* 🐦 **[xKit](https://github.com/jscraik/xKit)** - Unofficial X Web API Toolkit
+* 🐦 **[xKit](https://github.com/jscraik/xKit)** ⭐ 1 - Unofficial X Web API Toolkit
 
 ## Quick Start (Pick One)
 
