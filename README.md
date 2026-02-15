@@ -102,8 +102,8 @@ zsearch --help
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
 * 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
-* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
+* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could lea...
 * 📦 **[narrative](https://github.com/jscraik/narrative)**
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
