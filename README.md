@@ -63,7 +63,12 @@
 
 ## Featured Projects (Community + Adoption)
 
-
+* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 1 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Co...
+* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - rSearch helps developers search, fetch, and download arXiv papers from the terminal
+* 📚 **[wSearch](https://github.com/jscraik/wSearch)**
+* 🔍 **[zSearch](https://github.com/jscraik/zSearch)** - Z.AI capabilities CLI and MCP server for agents and automation
+* 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
+* 🐦 **[xKit](https://github.com/jscraik/xKit)** ⭐ 3 - Unofficial X Web API Toolkit
 
 ## Quick Start (Pick One)
 
@@ -92,6 +97,16 @@ wsearch --help
 npm i -g @brainwav/zsearch
 zsearch --help
 ```
+
+## More Projects
+
+* 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
+* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could lea...
+* 📦 **[narrative](https://github.com/jscraik/narrative)**
+* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
+* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 
 ## The Search Family
 
