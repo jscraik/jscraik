@@ -101,12 +101,12 @@ zsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[narrative](https://github.com/jscraik/narrative)**
+* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
 * 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could lea...
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 
 ## The Search Family
