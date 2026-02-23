@@ -100,7 +100,6 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
