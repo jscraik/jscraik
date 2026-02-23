@@ -400,11 +400,10 @@ All published under \`@brainwav\` on npm:
 
 ## What I'm Doing
 
-* **Building AI-powered CLIs** - Tools that make developers' lives easier
-* **Shipping governance frameworks** - Safety-first AI development and practical tooling
-* **Learning in public** - Documenting the journey from demo to duty
-* **Vibe-coding** - Rapid prototyping with Claude Code and Codex
-
+* **Engineering deterministic AI workflows** - Shipping [ralph-gold](https://github.com/jscraik/ralph-gold) to run fresh Codex/Claude/Copilot sessions in a repeatable loop
+* **Publishing practical AI tooling** - Maintaining [rSearch](https://github.com/jscraik/rSearch) and [wSearch](https://github.com/jscraik/wSearch) CLIs for research, search, and query workflows
+* **Building agent infrastructure** - Evolving [mKit](https://github.com/jscraik/mKit) as a practical MCP/Cloudflare Workers foundation for AI tooling
+* **Improving developer operations** - Building reusable tooling ecosystems like [Agent-Skills](https://github.com/jscraik/Agent-Skills), [SkillsInspector](https://github.com/jscraik/SkillsInspector), [code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit), [firefly-narrative](https://github.com/jscraik/firefly-narrative), [Design-System](https://github.com/jscraik/Design-System), and [data-dashboard](https://github.com/jscraik/data-dashboard)
 ---
 
 ## 🤝 Let's Build Together
