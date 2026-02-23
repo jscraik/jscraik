@@ -37,11 +37,9 @@ const FEATURED_REPOS = [
   'ralph-gold',
   'rSearch',
   'wSearch',
-  'zSearch',
   'mKit',
   'sTools',
-  'xKit',
-  'gKit'
+  'xKit'
 ];
 
 const CEMETERY_URL = 'https://jscraik.github.io/unfinished-cemetery';
@@ -124,6 +122,9 @@ function filterActiveRepos(repos) {
   return repos.filter(repo => {
     // Must be public
     if (repo.private) return false;
+
+    // Skip archived repos from active listings
+    if (repo.archived) return false;
 
     // Skip explicitly excluded repos
     if (EXCLUDED_REPOS.includes(repo.name)) return false;
@@ -273,15 +274,6 @@ npm i -g @brainwav/wsearch-cli
 wsearch --help
 \`\`\``
     },
-    {
-      repoName: 'zSearch',
-      snippet:
-`\`\`\`bash
-# zSearch
-npm i -g @brainwav/zsearch
-zsearch --help
-\`\`\``
-    }
   ];
 
   const activeRepoNames = new Set(activeRepos.map((repo) => repo.name));
@@ -299,11 +291,10 @@ zsearch --help
 /**
  * Generate the complete README markdown content
  */
-function generateReadmeContent(userProfile, repos) {
+function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos) {
   const timestamp = generateTimestamp();
   const isoDate = generateISODate();
-  const activeRepos = repos.filter((repo) => !repo.archived);
-  const archivedRepos = repos.filter((repo) => repo.archived);
+  const archivedRepos = allRepos.filter((repo) => repo.archived && !EXCLUDED_REPOS.includes(repo.name));
 
   // Split active repos into featured and more
   const featuredRepos = activeRepos.filter((r) => FEATURED_REPOS.includes(r.name));
@@ -339,7 +330,7 @@ function generateReadmeContent(userProfile, repos) {
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (${timestamp}):** Building gKit and CLI tooling for AI developer workflows.
+**Now (${timestamp}):** Building CLI tooling for AI developer workflows.
 
 **Last updated:** ${isoDate}
 
@@ -404,14 +395,13 @@ All published under \`@brainwav\` on npm:
 
 | CLI | What it does | Install |
 |-----|--------------|---------|
-| zSearch | Z.AI vision, search, web reader, repo exploration, MCP server | \`npm i -g @brainwav/zsearch\` |
 | rSearch | arXiv paper search, fetch, download | \`npm i -g @brainwav/rsearch\` |
 | wSearch | Wikidata REST/SPARQL queries | \`npm i -g @brainwav/wsearch-cli\` |
 
 ## What I'm Doing
 
 * **Building AI-powered CLIs** - Tools that make developers' lives easier
-* **Shipping governance frameworks** - Safety-first AI development with **[gKit](https://github.com/${USERNAME}/gKit)**
+* **Shipping governance frameworks** - Safety-first AI development and practical tooling
 * **Learning in public** - Documenting the journey from demo to duty
 * **Vibe-coding** - Rapid prototyping with Claude Code and Codex
 
@@ -481,15 +471,15 @@ async function main() {
   const allRepos = await fetchAllRepos();
   console.log(`   ✅ Found ${allRepos.length} public repos`);
 
-  // Filter and sort repos
+  // Filter and sort active repos
   const activeRepos = filterActiveRepos(allRepos);
   console.log(`   ✅ ${activeRepos.length} active repos (updated within ${REPO_UPDATED_DAYS_THRESHOLD} days or featured)`);
 
-  const sortedRepos = sortRepos(activeRepos);
+  const sortedActiveRepos = sortRepos(activeRepos);
 
   // Generate README content
   console.log('✍️  Generating README content...');
-  const readmeContent = generateReadmeContent(userProfile, sortedRepos);
+  const readmeContent = generateReadmeContent(userProfile, sortedActiveRepos, allRepos);
 
   // Write README
   await writeReadme(readmeContent);

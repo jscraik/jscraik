@@ -18,7 +18,7 @@
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (Feb 23, 2026):** Building gKit and CLI tooling for AI developer workflows.
+**Now (Feb 23, 2026):** Building CLI tooling for AI developer workflows.
 
 **Last updated:** 2026-02-23
 
@@ -96,6 +96,8 @@ wsearch --help
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
+* ⚙️ **[gKit](https://jscraik.github.io/unfinished-cemetery)** - Governance and policy-focused CLI tooling for AI workflows
+  - GitHub: [jscraik/gKit](https://github.com/jscraik/gKit)
 
 ## More Projects
 
@@ -113,14 +115,13 @@ All published under `@brainwav` on npm:
 
 | CLI | What it does | Install |
 |-----|--------------|---------|
-| zSearch | Z.AI vision, search, web reader, repo exploration, MCP server | `npm i -g @brainwav/zsearch` |
 | rSearch | arXiv paper search, fetch, download | `npm i -g @brainwav/rsearch` |
 | wSearch | Wikidata REST/SPARQL queries | `npm i -g @brainwav/wsearch-cli` |
 
 ## What I'm Doing
 
 * **Building AI-powered CLIs** - Tools that make developers' lives easier
-* **Shipping governance frameworks** - Safety-first AI development with **[gKit](https://github.com/jscraik/gKit)**
+* **Shipping governance frameworks** - Safety-first AI development and tooling
 * **Learning in public** - Documenting the journey from demo to duty
 * **Vibe-coding** - Rapid prototyping with Claude Code and Codex
 
