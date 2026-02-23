@@ -44,6 +44,9 @@ const FEATURED_REPOS = [
   'gKit'
 ];
 
+const CEMETERY_URL = 'https://jscraik.github.io/unfinished-cemetery';
+const ARCHIVED_SECTION_TITLE = '## 🧭 Archived Projects';
+
 // Repos to exclude from listing (test, demo, or template repos)
 const EXCLUDED_REPOS = [
   's1ngularity-repository-1',
@@ -219,10 +222,73 @@ function getRepoEmoji(repoName) {
 /**
  * Truncate description to fit on one line
  */
-function truncateDescription(description, maxLength = 100) {
+function truncateDescription(description, maxLength = 220) {
   if (!description) return '';
   if (description.length <= maxLength) return description;
   return description.slice(0, maxLength - 3) + '...';
+}
+
+function buildRepoBullet(repo, options = {}) {
+  const { useCemetery, includeStars = true } = options;
+  const emoji = getRepoEmoji(repo.name);
+  const stars = includeStars && repo.stargazers_count > 0 ? ` ⭐ ${formatStars(repo.stargazers_count)}` : '';
+  const description = repo.description ? ` - ${truncateDescription(repo.description)}` : '';
+  const repoUrl = useCemetery ? CEMETERY_URL : `https://github.com/${USERNAME}/${repo.name}`;
+  const githubLink = useCemetery
+    ? `\n  - GitHub: [${USERNAME}/${repo.name}](https://github.com/${USERNAME}/${repo.name})`
+    : '';
+
+  return `* ${emoji} **[${repo.name}](${repoUrl})**${stars}${description}${githubLink}`;
+}
+
+function buildQuickStartCommands(activeRepos) {
+  const quickStarts = [
+    {
+      repoName: 'ralph-gold',
+      snippet:
+`\`\`\`bash
+# ralph-gold
+gh repo clone ${USERNAME}/ralph-gold
+cd ralph-gold
+uv tool install -e .
+ralph --help
+\`\`\``
+    },
+    {
+      repoName: 'rSearch',
+      snippet:
+`\`\`\`bash
+# rSearch
+npm i -g @brainwav/rsearch
+rsearch --help
+\`\`\``
+    },
+    {
+      repoName: 'wSearch',
+      snippet:
+`\`\`\`bash
+# wSearch
+npm i -g @brainwav/wsearch-cli
+wsearch --help
+\`\`\``
+    },
+    {
+      repoName: 'zSearch',
+      snippet:
+`\`\`\`bash
+# zSearch
+npm i -g @brainwav/zsearch
+zsearch --help
+\`\`\``
+    }
+  ];
+
+  const activeRepoNames = new Set(activeRepos.map((repo) => repo.name));
+
+  return quickStarts
+    .filter((item) => activeRepoNames.has(item.repoName))
+    .map((item) => item.snippet)
+    .join('\n\n');
 }
 
 // =============================================================================
@@ -235,28 +301,22 @@ function truncateDescription(description, maxLength = 100) {
 function generateReadmeContent(userProfile, repos) {
   const timestamp = generateTimestamp();
   const isoDate = generateISODate();
-  const followerCount = userProfile?.followers ?? 0;
-  const publicRepoCount = userProfile?.public_repos ?? 0;
+  const activeRepos = repos.filter((repo) => !repo.archived);
+  const archivedRepos = repos.filter((repo) => repo.archived);
 
-  // Split repos into featured and more
-  const featuredRepos = repos.filter(r => FEATURED_REPOS.includes(r.name));
-  const moreRepos = repos.filter(r => !FEATURED_REPOS.includes(r.name));
+  // Split active repos into featured and more
+  const featuredRepos = activeRepos.filter((r) => FEATURED_REPOS.includes(r.name));
+  const moreRepos = activeRepos.filter((r) => !FEATURED_REPOS.includes(r.name));
 
   // Generate featured projects list
-  const featuredProjectsList = featuredRepos.map(repo => {
-    const emoji = getRepoEmoji(repo.name);
-    const stars = repo.stargazers_count > 0 ? ` ⭐ ${formatStars(repo.stargazers_count)}` : '';
-    const description = repo.description ? ` - ${truncateDescription(repo.description)}` : '';
-    return `* ${emoji} **[${repo.name}](https://github.com/jscraik/${repo.name})**${stars}${description}`;
-  }).join('\n');
+  const featuredProjectsList = featuredRepos.map((repo) => buildRepoBullet(repo)).join('\n');
 
   // Generate more projects list
-  const moreProjectsList = moreRepos.map(repo => {
-    const emoji = getRepoEmoji(repo.name);
-    const stars = repo.stargazers_count > 0 ? ` ⭐ ${formatStars(repo.stargazers_count)}` : '';
-    const description = repo.description ? ` - ${truncateDescription(repo.description)}` : '';
-    return `* ${emoji} **[${repo.name}](https://github.com/jscraik/${repo.name})**${stars}${description}`;
-  }).join('\n');
+  const moreProjectsList = moreRepos.map((repo) => buildRepoBullet(repo)).join('\n');
+  const archivedProjectsList = archivedRepos
+    .map((repo) => buildRepoBullet(repo, { useCemetery: true, includeStars: false }))
+    .join('\n');
+  const quickStartCommands = buildQuickStartCommands(activeRepos);
 
   return `<div align="center">
 
@@ -327,31 +387,11 @@ ${featuredProjectsList}
 
 ## Quick Start (Pick One)
 
-\`\`\`bash
-# ralph-gold
-gh repo clone ${USERNAME}/ralph-gold
-cd ralph-gold
-uv tool install -e .
-ralph --help
-\`\`\`
+${quickStartCommands || '```bash\n# Quick start commands will be updated as active projects change\n```'}
 
-\`\`\`bash
-# rSearch
-npm i -g @brainwav/rsearch
-rsearch --help
-\`\`\`
+${ARCHIVED_SECTION_TITLE} (Moved to Cemetery)
 
-\`\`\`bash
-# wSearch
-npm i -g @brainwav/wsearch-cli
-wsearch --help
-\`\`\`
-
-\`\`\`bash
-# zSearch
-npm i -g @brainwav/zsearch
-zsearch --help
-\`\`\`
+${archivedProjectsList || `* No archived projects currently listed.`}
 
 ${moreRepos.length > 0 ? `## More Projects
 

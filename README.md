@@ -63,12 +63,10 @@
 
 ## Featured Projects (Community + Adoption)
 
-* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 1 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Co...
+* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 1 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
 * 📄 **[rSearch](https://github.com/jscraik/rSearch)** - rSearch helps developers search, fetch, and download arXiv papers from the terminal
 * 📚 **[wSearch](https://github.com/jscraik/wSearch)**
-* 🔍 **[zSearch](https://github.com/jscraik/zSearch)** - Z.AI capabilities CLI and MCP server for agents and automation
 * 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
-* 🐦 **[xKit](https://github.com/jscraik/xKit)** ⭐ 3 - Unofficial X Web API Toolkit
 
 ## Quick Start (Pick One)
 
@@ -92,22 +90,23 @@ npm i -g @brainwav/wsearch-cli
 wsearch --help
 ```
 
-```bash
-# zSearch
-npm i -g @brainwav/zsearch
-zsearch --help
-```
+## 🧭 Archived Projects (Moved to Cemetery)
+
+* 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
-* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
-* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could lea...
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
+* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
+* 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
 
 ## The Search Family
 
