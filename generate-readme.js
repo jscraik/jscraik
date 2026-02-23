@@ -51,7 +51,8 @@ const ARCHIVED_SECTION_TITLE = '## 🧭 Archived Projects';
 const EXCLUDED_REPOS = [
   's1ngularity-repository-1',
   'brainwav-governance-canary',
-  '.github'
+  '.github',
+  'jscraik'
 ];
 
 // =============================================================================
@@ -403,9 +404,9 @@ All published under \`@brainwav\` on npm:
 
 | CLI | What it does | Install |
 |-----|--------------|---------|
-| **[zSearch](https://github.com/${USERNAME}/zSearch)** | Z.AI vision, search, web reader, repo exploration, MCP server | \`npm i -g @brainwav/zsearch\` |
-| **[rSearch](https://github.com/${USERNAME}/rSearch)** | arXiv paper search, fetch, download | \`npm i -g @brainwav/rsearch\` |
-| **[wSearch](https://github.com/${USERNAME}/wSearch)** | Wikidata REST/SPARQL queries | \`npm i -g @brainwav/wsearch-cli\` |
+| zSearch | Z.AI vision, search, web reader, repo exploration, MCP server | \`npm i -g @brainwav/zsearch\` |
+| rSearch | arXiv paper search, fetch, download | \`npm i -g @brainwav/rsearch\` |
+| wSearch | Wikidata REST/SPARQL queries | \`npm i -g @brainwav/wsearch-cli\` |
 
 ## What I'm Doing
 

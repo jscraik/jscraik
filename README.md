@@ -114,9 +114,9 @@ All published under `@brainwav` on npm:
 
 | CLI | What it does | Install |
 |-----|--------------|---------|
-| **[zSearch](https://github.com/jscraik/zSearch)** | Z.AI vision, search, web reader, repo exploration, MCP server | `npm i -g @brainwav/zsearch` |
-| **[rSearch](https://github.com/jscraik/rSearch)** | arXiv paper search, fetch, download | `npm i -g @brainwav/rsearch` |
-| **[wSearch](https://github.com/jscraik/wSearch)** | Wikidata REST/SPARQL queries | `npm i -g @brainwav/wsearch-cli` |
+| zSearch | Z.AI vision, search, web reader, repo exploration, MCP server | `npm i -g @brainwav/zsearch` |
+| rSearch | arXiv paper search, fetch, download | `npm i -g @brainwav/rsearch` |
+| wSearch | Wikidata REST/SPARQL queries | `npm i -g @brainwav/wsearch-cli` |
 
 ## What I'm Doing
 
