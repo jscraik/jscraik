@@ -101,8 +101,8 @@ zsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 * 📦 **[jscraik](https://github.com/jscraik/jscraik)** - from demo to duty | Veteran-Led
+* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
