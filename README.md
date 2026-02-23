@@ -96,14 +96,12 @@ wsearch --help
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
-* ⚙️ **[gKit](https://jscraik.github.io/unfinished-cemetery)** - Governance and policy-focused CLI tooling for AI workflows
-  - GitHub: [jscraik/gKit](https://github.com/jscraik/gKit)
 
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
@@ -121,7 +119,7 @@ All published under `@brainwav` on npm:
 ## What I'm Doing
 
 * **Building AI-powered CLIs** - Tools that make developers' lives easier
-* **Shipping governance frameworks** - Safety-first AI development and tooling
+* **Shipping governance frameworks** - Safety-first AI development and practical tooling
 * **Learning in public** - Documenting the journey from demo to duty
 * **Vibe-coding** - Rapid prototyping with Claude Code and Codex
 
