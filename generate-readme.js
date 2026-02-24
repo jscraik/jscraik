@@ -400,7 +400,7 @@ All published under \`@brainwav\` on npm:
 
 ## What I'm Doing
 
-* **Current focus** - Making `ralph-gold` and the `brainwav` CLIs more reliable and production-ready while growing mKit-based agent tooling
+* **Current focus** - Making \`ralph-gold\` and the \`brainwav\` CLIs more reliable and production-ready while growing mKit-based agent tooling
 * **Engineering deterministic AI workflows** - Shipping [ralph-gold](https://github.com/jscraik/ralph-gold) to run fresh Codex/Claude/Copilot sessions in a repeatable loop
 * **Publishing practical AI tooling** - Maintaining [rSearch](https://github.com/jscraik/rSearch) and [wSearch](https://github.com/jscraik/wSearch) CLIs for research, search, and query workflows
 * **Building agent infrastructure** - Evolving [mKit](https://github.com/jscraik/mKit) as a practical MCP/Cloudflare Workers foundation for AI tooling
