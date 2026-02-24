@@ -100,10 +100,11 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
-* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
+* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 
