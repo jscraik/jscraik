@@ -18,9 +18,9 @@
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (Mar 3, 2026):** Building CLI tooling for AI developer workflows.
+**Now (Mar 4, 2026):** Building CLI tooling for AI developer workflows.
 
-**Last updated:** 2026-03-03
+**Last updated:** 2026-03-04
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Vibe--Coding-F39C12?style=flat-square&logo=terminal&logoColor=white)
@@ -100,8 +100,8 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
