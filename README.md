@@ -100,8 +100,8 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
