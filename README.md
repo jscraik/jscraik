@@ -63,17 +63,50 @@
 
 ## Featured Projects (Community + Adoption)
 
-
+* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 1 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
+* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - rSearch helps developers search, fetch, and download arXiv papers from the terminal
+* 📚 **[wSearch](https://github.com/jscraik/wSearch)**
+* 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
 
 ## Quick Start (Pick One)
 
 ```bash
-# Quick start commands will be updated as active projects change
+# ralph-gold
+gh repo clone jscraik/ralph-gold
+cd ralph-gold
+uv tool install -e .
+ralph --help
+```
+
+```bash
+# rSearch
+npm i -g @brainwav/rsearch
+rsearch --help
+```
+
+```bash
+# wSearch
+npm i -g @brainwav/wsearch-cli
+wsearch --help
 ```
 
 ## 🧭 Archived Projects (Moved to Cemetery)
 
-* No archived projects currently listed.
+* 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
+
+## More Projects
+
+* 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
+* 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
+* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
+* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
+* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 
 ## The Search Family
 
