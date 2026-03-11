@@ -92,6 +92,10 @@ wsearch --help
 
 ## 🧭 Archived Projects (Moved to Cemetery)
 
+* 📦 **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
+* 📦 **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
 * 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
@@ -100,13 +104,12 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
-* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
 
 ## The Search Family
 
