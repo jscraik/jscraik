@@ -92,12 +92,12 @@ wsearch --help
 
 ## 🧭 Archived Projects (Moved to Cemetery)
 
+* 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * 📦 **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
 * 📦 **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
-* 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
-  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
