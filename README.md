@@ -18,9 +18,9 @@
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (Mar 3, 2026):** Building CLI tooling for AI developer workflows.
+**Now (Mar 28, 2026):** Building CLI tooling for AI developer workflows.
 
-**Last updated:** 2026-03-03
+**Last updated:** 2026-03-28
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Vibe--Coding-F39C12?style=flat-square&logo=terminal&logoColor=white)
@@ -63,7 +63,7 @@
 
 ## Featured Projects (Community + Adoption)
 
-* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 1 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
+* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 2 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
 * 📄 **[rSearch](https://github.com/jscraik/rSearch)** - rSearch helps developers search, fetch, and download arXiv papers from the terminal
 * 📚 **[wSearch](https://github.com/jscraik/wSearch)**
 * 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
@@ -94,19 +94,22 @@ wsearch --help
 
 * 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* 📦 **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
+* 📦 **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
 * 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
-* 📦 **[firefly-narrative](https://github.com/jscraik/firefly-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
-* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
-* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
-* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
-* 📦 **[data-dashboard](https://github.com/jscraik/data-dashboard)**
+* 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
+* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
+* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 
 ## The Search Family
 
@@ -142,24 +145,3 @@ All published under `@brainwav` on npm:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jamiescottcraik)
 [![Twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/jscraik)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jscraik@brainwav.io)
-
-<!-- AGENT-FIRST-WORKFLOW:START -->
-## Agent-first workflow
-
-1. Create/update implementation plan using `.agent/PLANS.md` contract.
-2. Validate plan graph:
-
-```bash
-python3 /Users/jamiecraik/.codex/scripts/plan-graph-lint.py .agent/PLANS.md
-```
-
-3. Run canonical verification:
-
-```bash
-/Users/jamiecraik/.codex/scripts/verify-work.sh
-```
-
-4. Follow global scaffold policy:
-
-- `/Users/jamiecraik/.codex/instructions/agent-first-scaffold-spec.md`
-<!-- AGENT-FIRST-WORKFLOW:END -->
