@@ -18,9 +18,9 @@
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (Mar 28, 2026):** Building CLI tooling for AI developer workflows.
+**Now (Mar 29, 2026):** Building CLI tooling for AI developer workflows.
 
-**Last updated:** 2026-03-28
+**Last updated:** 2026-03-29
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Vibe--Coding-F39C12?style=flat-square&logo=terminal&logoColor=white)
@@ -104,8 +104,8 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
-* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
