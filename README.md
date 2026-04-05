@@ -103,7 +103,7 @@ wsearch --help
 
 ## More Projects
 
-* 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - My catalogue of Skills.md
+* 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - Canonical skill catalog for Codex, Claude Code, and Gemini/Antigravity. Author once, validate quality, and sync 120+ AI coding skills across runtimes.
 * 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
