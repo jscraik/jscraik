@@ -64,7 +64,7 @@
 ## Featured Projects (Community + Adoption)
 
 * 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 2 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
-* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - Search, fetch, and download arXiv papers from the terminal. CLI + programmatic TypeScript client.
+* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - Search, fetch, and download arXiv papers from the terminal. CLI + programmatic TypeScript client
 * 📚 **[wSearch](https://github.com/jscraik/wSearch)** - Safe, script-friendly CLI for querying Wikidata via REST, SPARQL, and Action API. Read-only by default   with encrypted token storage
 * 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
 
@@ -104,8 +104,8 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - Canonical skill catalog for Codex, Claude Code, and Gemini/Antigravity. Author once, validate quality, and sync 120+ AI coding skills across runtimes.
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Design system and component library for building consistent UI across ChatGPT widgets and standalone React   apps.
-* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
