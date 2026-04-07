@@ -18,9 +18,9 @@
 
 > **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
 
-**Now (Apr 6, 2026):** Building CLI tooling for AI developer workflows.
+**Now (Apr 7, 2026):** Building CLI tooling for AI developer workflows.
 
-**Last updated:** 2026-04-06
+**Last updated:** 2026-04-07
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Vibe--Coding-F39C12?style=flat-square&logo=terminal&logoColor=white)
@@ -64,8 +64,8 @@
 ## Featured Projects (Community + Adoption)
 
 * 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 2 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
-* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - rSearch helps developers search, fetch, and download arXiv papers from the terminal
-* 📚 **[wSearch](https://github.com/jscraik/wSearch)**
+* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - Search, fetch, and download arXiv papers from the terminal. CLI + programmatic TypeScript client.
+* 📚 **[wSearch](https://github.com/jscraik/wSearch)** - Safe, script-friendly CLI for querying Wikidata via REST, SPARQL, and Action API. Read-only by default   with encrypted token storage
 * 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
 
 ## Quick Start (Pick One)
@@ -104,12 +104,12 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - Canonical skill catalog for Codex, Claude Code, and Gemini/Antigravity. Author once, validate quality, and sync 120+ AI coding skills across runtimes.
+* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Design system and component library for building consistent UI across ChatGPT widgets and standalone React   apps.
 * 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)**
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 * 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Cross-Platform UI Workbench
 
 ## The Search Family
 
