@@ -104,10 +104,10 @@ wsearch --help
 ## More Projects
 
 * 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - Canonical skill catalog for Codex, Claude Code, and Gemini/Antigravity. Author once, validate quality, and sync 120+ AI coding skills across runtimes.
-* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
-* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Design system and component library for building consistent UI across ChatGPT widgets and standalone React   apps.
+* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
+* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
 * 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
 * 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
 
