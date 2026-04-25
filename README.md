@@ -1,8 +1,8 @@
 <div align="center">
 
-# Jamie Scott Craik | AI Software Developer
+# Jamie Scott Craik
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=700&lines=AI-Powered+Developer+Tools+%7C+Vibe-Coding;From+Demo+To+Duty+%7C+British+Army+Veteran;Building+Tools+That+Amplify+Developer+Experience" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=760&lines=Grumpy+Old+Vet%2C+Solo+Harness+Builder;From+Demo+To+Duty;Codex-First+Engineering+That+Ships" alt="Grumpy Old Vet, Solo Harness Builder, From Demo to Duty, Codex-first engineering that ships" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jamiescottcraik)
 [![GitHub followers](https://img.shields.io/github/followers/jscraik?label=Follow&style=for-the-badge&logo=github)](https://github.com/jscraik)
@@ -12,61 +12,56 @@
 
 ---
 
-## British Army Veteran | AI Software Developer
+## Grumpy Old Vet, Solo Harness Builder
 
-**Founder, brAInwav | AI-Powered Tools | Vibe-Coding Mode**
+**British Army veteran | Founder, brAInwav | Codex-first toolmaker**
 
-> **From Demo to Duty:** Transforming playful experiments into production tools. Building AI-powered developer tools that make coding more accessible, more fun, and more powerful.
+> **From Demo to Duty:** turning promising AI experiments into repeatable engineering workflows that a real project can trust.
 
-**Now (Apr 25, 2026):** Building CLI tooling for AI developer workflows.
+**Now (Apr 25, 2026):** building Codex-first CLI tooling, agent instructions, and governance systems for AI-assisted engineering.
+
+By **harness**, I mean the operating layer around Codex: CLI tools, instructions, validation gates, repo workflows, and review loops that make AI-assisted coding repeatable.
 
 **Last updated:** 2026-04-25
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
-![Mode](https://img.shields.io/badge/Mode-Vibe--Coding-F39C12?style=flat-square&logo=terminal&logoColor=white)
-![Focus](https://img.shields.io/badge/Focus-AI_Powered_Tools-00ADD8?style=flat-square&logo=openai&logoColor=white)
+![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-Solo_Harness_Builder-00ADD8?style=flat-square&logo=openai&logoColor=white)
 
 ---
 
-## 💻 Vibe-Coding Stack
+## From Demo To Duty
 
-**AI Pair Programmers**
+I build the harness around Codex so AI coding can move from impressive demos to dependable project work:
 
-<a href="https://github.com/jscraik"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/claude.png" alt="Claude" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/openai.png" alt="OpenAI" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://unpkg.com/@lobehub/icons-static-png@latest/dark/ollama.png" alt="Ollama" width="32" height="32" /></a>
+* fresh implementation loops
+* CLI research and knowledge tools
+* MCP/server foundations
+* instruction packs and validation gates
+* repo governance that keeps human intent visible
 
-**Languages & Frameworks**
+## Working Stack
 
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png" alt="SwiftUI" width="32" height="32" /></a>
-
-**Build Tools & Environment**
-
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" width="32" height="32" /></a>
-<a href="https://github.com/jscraik"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" width="32" height="32" /></a>
-![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![CLI](https://img.shields.io/badge/CLI-000000?style=flat-square&logo=gnu-bash&logoColor=white)
-![Vibe Coding](https://img.shields.io/badge/Vibe--Coding-F39C12?style=flat-square&logo=rocket&logoColor=white)
+Codex, OpenAI, MCP, TypeScript, Node.js, React, Swift, SwiftUI, Python, Bash, macOS, GitHub Actions, CircleCI, CodeRabbit.
 
 ## TL;DR
 
 **Problem:** OSS teams and founders need fast, reliable AI tooling they can trust.
 
-**Solution:** I build pragmatic CLIs and governance tools that turn experiments into safe, repeatable workflows.
+**Solution:** I build pragmatic Codex-first harnesses: CLIs, instruction systems, validation gates, and governance tools that turn experiments into safe, repeatable workflows.
 
 **Why it helps:** Clear defaults, fast setup, and tools that scale from solo dev to team.
 
-## Featured Projects (Community + Adoption)
+## Featured Work
 
-* 🧭 **[ralph-gold](https://github.com/jscraik/ralph-gold)** ⭐ 2 - A *Golden Ralph Loop* orchestrator that runs **fresh CLI-agent sessions** (Codex, Claude Code, Copilot) in a deterministic loop until your PRD is complete.
-* 📄 **[rSearch](https://github.com/jscraik/rSearch)** - Search, fetch, and download arXiv papers from the terminal. CLI + programmatic TypeScript client
-* 📚 **[wSearch](https://github.com/jscraik/wSearch)** - Safe, script-friendly CLI for querying Wikidata via REST, SPARQL, and Action API. Read-only by default   with encrypted token storage
-* 🧰 **[mKit](https://github.com/jscraik/mKit)** ⭐ 1 - MCP Server Boilerplate for Cloudflare Workers
+| Project | Why it matters | Signal |
+|---|---|---|
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows. | 2 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | A Golden Ralph Loop orchestrator for running fresh Codex sessions in a deterministic implementation loop. | 2 stars |
+| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
+| [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
+| [mKit](https://github.com/jscraik/mKit) | MCP server boilerplate for Cloudflare Workers. | 1 star |
+| [Design-System](https://github.com/jscraik/Design-System) | Cross-platform UI workbench and component system for ChatGPT widgets and React apps. | active |
 
 ## Quick Start (Pick One)
 
@@ -90,26 +85,12 @@ npm i -g @brainwav/wsearch-cli
 wsearch --help
 ```
 
-## 🧭 Archived Projects (Moved to Cemetery)
-
-* 🔍 **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
-  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
-* 📦 **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
-  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
-* 📦 **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
-  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
-* 🐦 **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
-  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
-
 ## More Projects
 
-* 📦 **[Agent-Skills](https://github.com/jscraik/Agent-Skills)** ⭐ 2 - Canonical skill catalog for Codex, Claude Code, and Gemini/Antigravity. Author once, validate quality, and sync 100+ AI coding skills across runtimes.
-* 📦 **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
-* 📦 **[Design-System](https://github.com/jscraik/Design-System)** - Design system and component library for building consistent UI across ChatGPT widgets and standalone React   apps.
-* 📦 **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
-* 📦 **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died  so we could learn what lives.
-* 📦 **[SkillsInspector](https://github.com/jscraik/SkillsInspector)** - Developer toolkit for Skills.md trees
-* 📦 **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)**
+* **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
+* **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
+* **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Tools and scripts for archeological analysis of codebases, commit history, and development patterns.
 
 ## The Search Family
 
@@ -122,21 +103,38 @@ All published under `@brainwav` on npm:
 
 ## What I'm Doing
 
-* **Current focus** - Making `ralph-gold` and the `brainwav` CLIs more reliable and production-ready while growing mKit-based agent tooling
-* **Engineering deterministic AI workflows** - Shipping [ralph-gold](https://github.com/jscraik/ralph-gold) to run fresh Codex/Claude/Copilot sessions in a repeatable loop
+* **Current focus** - Making `ralph-gold`, `Agent-Skills`, and the `brainwav` CLIs more reliable and production-ready
+* **Engineering deterministic AI workflows** - Shipping [ralph-gold](https://github.com/jscraik/ralph-gold) to run fresh Codex sessions in a repeatable loop
 * **Publishing practical AI tooling** - Maintaining [rSearch](https://github.com/jscraik/rSearch) and [wSearch](https://github.com/jscraik/wSearch) CLIs for research, search, and query workflows
 * **Building agent infrastructure** - Evolving [mKit](https://github.com/jscraik/mKit) as a practical MCP/Cloudflare Workers foundation for AI tooling
-* **Improving developer operations** - Building reusable tooling ecosystems like [Agent-Skills](https://github.com/jscraik/Agent-Skills), [SkillsInspector](https://github.com/jscraik/SkillsInspector), [code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit), [firefly-narrative](https://github.com/jscraik/firefly-narrative), [Design-System](https://github.com/jscraik/Design-System), and [data-dashboard](https://github.com/jscraik/data-dashboard)
+* **Improving developer operations** - Building reusable tooling ecosystems like [Agent-Skills](https://github.com/jscraik/Agent-Skills), [code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit), [trace-narrative](https://github.com/jscraik/trace-narrative), and [Design-System](https://github.com/jscraik/Design-System)
 
 ---
 
-## 🤝 Let's Build Together
+## Work With Me On
 
-**🛠️ Tool Development** · AI-powered CLIs · Developer experience · Automation tools
+**Agentic developer workflows** - Codex, MCP, review loops, PR automation, and validation gates
 
-**🤝 Collaboration** · Open source contribution · Veteran tech initiatives · Fun projects
+**CLI tools** - research, knowledge, search, repo automation, and developer UX
 
-**🚀 From Demo to Duty** · Turn experiments into products · Ship safely · Learn in public
+**AI governance** - instructions, drift control, and repeatable workflows that keep human intent visible
+
+**Grumpy Old Vet product thinking** - turning messy prototypes into dependable tools without losing the human intent
+
+---
+
+## Learning In Public
+
+I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
+
+* **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
+* **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
 ---
 
