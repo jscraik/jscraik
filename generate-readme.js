@@ -45,6 +45,10 @@ const FEATURED_REPOS = [
 const CEMETERY_URL = 'https://jscraik.github.io/unfinished-cemetery';
 const ARCHIVED_SECTION_TITLE = '## Learning In Public';
 
+// REPO_DISPLAY_OVERRIDES provides custom descriptions for repositories.
+// NOTE: All repos in FEATURED_REPOS should have a corresponding entry here to ensure
+// they appear with consistent descriptions across the README. A startup assertion
+// below validates this coupling.
 const REPO_DISPLAY_OVERRIDES = {
   'Agent-Skills': {
     description: 'Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows.'
@@ -63,6 +67,9 @@ const REPO_DISPLAY_OVERRIDES = {
   },
   'Design-System': {
     description: 'Cross-platform UI workbench and component system for ChatGPT widgets and React apps.'
+  },
+  'code-archaeology-kit': {
+    description: 'Tools and scripts for archeological analysis of codebases, commit history, and development patterns.'
   }
 };
 
@@ -473,10 +480,39 @@ async function writeReadme(content) {
 }
 
 // =============================================================================
+// STARTUP VALIDATION
+// =============================================================================
+
+/**
+ * Validate that all featured repos have display overrides
+ * This ensures featured repos appear with consistent descriptions
+ */
+function validateFeaturedReposHaveOverrides() {
+  const missingOverrides = FEATURED_REPOS.filter(
+    (repoName) => !REPO_DISPLAY_OVERRIDES[repoName]
+  );
+
+  if (missingOverrides.length > 0) {
+    console.error(
+      `🚨 ERROR: Featured repos missing REPO_DISPLAY_OVERRIDES entries: ${missingOverrides.join(', ')}`
+    );
+    console.error(
+      `   Please add entries for these repos in REPO_DISPLAY_OVERRIDES (lines 48-67)`
+    );
+    throw new Error(
+      `Missing REPO_DISPLAY_OVERRIDES for featured repos: ${missingOverrides.join(', ')}`
+    );
+  }
+}
+
+// =============================================================================
 // MAIN EXECUTION
 // =============================================================================
 
 async function main() {
+  // Validate configuration before proceeding
+  validateFeaturedReposHaveOverrides();
+
   console.log('🚀 Starting README generation...');
 
   // Fetch user profile
