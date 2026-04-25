@@ -70,6 +70,9 @@ const REPO_DISPLAY_OVERRIDES = {
   },
   'code-archaeology-kit': {
     description: 'Tools and scripts for archeological analysis of codebases, commit history, and development patterns.'
+  },
+  'unfinished-cemetery': {
+    description: 'A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.'
   }
 };
 
@@ -488,20 +491,33 @@ async function writeReadme(content) {
  * This ensures featured repos appear with consistent descriptions
  */
 function validateFeaturedReposHaveOverrides() {
-  const missingOverrides = FEATURED_REPOS.filter(
-    (repoName) => !REPO_DISPLAY_OVERRIDES[repoName]
+  const invalidFeaturedOverrides = FEATURED_REPOS.filter((repoName) => {
+    const override = REPO_DISPLAY_OVERRIDES[repoName];
+    return (
+      !override ||
+      typeof override.description !== 'string' ||
+      override.description.trim().length === 0
+    );
+  });
+
+  const featuredExcludedOverlap = FEATURED_REPOS.filter((repoName) =>
+    EXCLUDED_REPOS.includes(repoName)
   );
 
-  if (missingOverrides.length > 0) {
+  if (invalidFeaturedOverrides.length > 0) {
     console.error(
-      `🚨 ERROR: Featured repos missing REPO_DISPLAY_OVERRIDES entries: ${missingOverrides.join(', ')}`
+      `🚨 ERROR: FEATURED_REPOS missing non-empty REPO_DISPLAY_OVERRIDES.description entries: ${invalidFeaturedOverrides.join(', ')}`
     );
+  }
+
+  if (featuredExcludedOverlap.length > 0) {
     console.error(
-      `   Please add entries for these repos in REPO_DISPLAY_OVERRIDES (lines 48-67)`
+      `🚨 ERROR: FEATURED_REPOS and EXCLUDED_REPOS overlap: ${featuredExcludedOverlap.join(', ')}`
     );
-    throw new Error(
-      `Missing REPO_DISPLAY_OVERRIDES for featured repos: ${missingOverrides.join(', ')}`
-    );
+  }
+
+  if (invalidFeaturedOverrides.length > 0 || featuredExcludedOverlap.length > 0) {
+    throw new Error('Invalid featured repo configuration');
   }
 }
 
