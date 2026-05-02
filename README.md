@@ -127,14 +127,14 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 * **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
 * **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
 * **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
-* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
-  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
 ---
 
