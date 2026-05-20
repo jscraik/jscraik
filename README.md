@@ -1,6 +1,6 @@
 <div align="center">
 
-# Jamie Craik, FloL
+# Jamie Scott Craik
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=760&lines=Grumpy+Old+Vet%2C+Solo+Harness+Builder;From+Demo+To+Duty;Codex-First+Engineering+That+Ships" alt="Grumpy Old Vet, Solo Harness Builder, From Demo to Duty, Codex-first engineering that ships" />
 
@@ -12,19 +12,19 @@
 
 ---
 
-## Harness Builder “Grumpy Old Vet” rebuilding life as an orchestrator of agents
+## Grumpy Old Vet, Solo Harness Builder
 
-**British Army Veteran | Founder, brAInwav | Codex-first toolmaker**
+**British Army veteran | Founder, brAInwav | Codex-first toolmaker**
 
-> **From Demo to Duty:** Building harnesses that have "Thin surface. Strong guardrails. Durable memory. Professional output."
+> **From Demo to Duty:** turning promising AI experiments into repeatable engineering workflows that a real project can trust.
 
-**Now (May 20, 2026):** building Codex-first Coding Harness, CLI tooling, agent instructions, and governance systems for agent native harness engineering.
+**Now (May 20, 2026):** building Codex-first CLI tooling, agent instructions, and governance systems for AI-assisted engineering.
 
 By **harness**, I mean the operating layer around Codex: CLI tools, instructions, validation gates, repo workflows, and review loops that make AI-assisted coding repeatable.
 
 **Last updated:** 2026-05-20
 
-![Philosophy](https://img.shields.io/badge/Philosophy-Thin surface._Strong_guardrails._Durable_memory._Professional_output-6B46C1?style=flat-square&logo=rocket&logoColor=white)
+![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
 ![Focus](https://img.shields.io/badge/Focus-Solo_Harness_Builder-00ADD8?style=flat-square&logo=openai&logoColor=white)
 
@@ -32,7 +32,7 @@ By **harness**, I mean the operating layer around Codex: CLI tools, instructions
 
 ## From Demo To Duty
 
-I am building the coding harness around Codex so agent native coding can move from impressive demos to dependable project work:
+I build the harness around Codex so AI coding can move from impressive demos to dependable project work:
 
 * fresh implementation loops
 * CLI research and knowledge tools
