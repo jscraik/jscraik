@@ -56,12 +56,42 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Swift, SwiftUI, Python, Bash, ma
 
 | Project | Why it matters | Signal |
 |---|---|---|
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows. | 4 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | A Golden Ralph Loop orchestrator for running fresh Codex sessions in a deterministic implementation loop. | 2 stars |
+| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
+| [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
+| [mKit](https://github.com/jscraik/mKit) | MCP server boilerplate for Cloudflare Workers. | 1 star |
+| [Design-System](https://github.com/jscraik/Design-System) | Cross-platform UI workbench and component system for ChatGPT widgets and React apps. | active |
 
 ## Quick Start (Pick One)
 
 ```bash
-# Quick start commands will be updated as active projects change
+# ralph-gold
+gh repo clone jscraik/ralph-gold
+cd ralph-gold
+uv tool install -e .
+ralph --help
 ```
+
+```bash
+# rSearch
+npm i -g @brainwav/rsearch
+rsearch --help
+```
+
+```bash
+# wSearch
+npm i -g @brainwav/wsearch-cli
+wsearch --help
+```
+
+## More Projects
+
+* **[evals](https://github.com/jscraik/evals)** - evals is a shared external contract suite, not the owner of project-local behavior
+* **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
+* **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
+* **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
+* **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Tools and scripts for archeological analysis of codebases, commit history, and development patterns.
 
 ## The Search Family
 
@@ -98,7 +128,14 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
-* No archived projects currently listed.
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
+* **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
+* **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
 
 ---
 
