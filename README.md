@@ -87,9 +87,9 @@ wsearch --help
 
 ## More Projects
 
+* **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
 * **[evals](https://github.com/jscraik/evals)** - evals is a shared external contract suite, not the owner of project-local behavior
 * **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
-* **[diagram-cli](https://github.com/jscraik/diagram-cli)** - A command-line tool for generating static architecture diagrams and enforcing architectural guardrails.
 * **[trace-narrative](https://github.com/jscraik/trace-narrative)** - A new way to discover the narrative, share, and collaborate across GIT and agent traces.
 * **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Tools and scripts for archeological analysis of codebases, commit history, and development patterns.
 
