@@ -56,7 +56,7 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Swift, SwiftUI, Python, Bash, ma
 
 | Project | Why it matters | Signal |
 |---|---|---|
-| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows. | 4 stars |
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows. | 5 stars |
 | [ralph-gold](https://github.com/jscraik/ralph-gold) | A Golden Ralph Loop orchestrator for running fresh Codex sessions in a deterministic implementation loop. | 2 stars |
 | [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
 | [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
