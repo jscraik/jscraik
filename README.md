@@ -34,11 +34,11 @@ By **harness**, I mean the operating layer around Codex and other coding agents:
 
 I build the layer that lets humans use coding agents with more confidence:
 
-- **Agent-ready repos** with clear entrypoints, preflight checks, validation gates, and rollback-aware workflows
-- **Runtime evidence** that separates local test truth from PR state, CI, review threads, tracker status, and merge readiness
-- **Capability systems** for skills, plugins, prompts, hooks, and review agents that can be validated instead of merely trusted
-- **CLI products** that make research, architecture, knowledge, and repo intelligence available to humans and agents
-- **Local-first memory and narrative tools** that preserve intent, decisions, receipts, and context across long-running work
+* **Agent-ready repos** with clear entrypoints, preflight checks, validation gates, and rollback-aware workflows
+* **Runtime evidence** that separates local test truth from PR state, CI, review threads, tracker status, and merge readiness
+* **Capability systems** for skills, plugins, prompts, hooks, and review agents that can be validated instead of merely trusted
+* **CLI products** that make research, architecture, knowledge, and repo intelligence available to humans and agents
+* **Local-first memory and narrative tools** that preserve intent, decisions, receipts, and context across long-running work
 
 ## Working Stack
 
@@ -54,26 +54,26 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 
 ## Proof From My Local Repos
 
-| Operating problem                                 | What I built                                                                                      | Repo proof                                                                                   |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Agents need a safe next step, not a wall of docs  | Cockpit-style commands, runtime cards, repo-local gates, and evidence-backed handoff              | synAIpse / coding-harness private work                                                       |
-| Skills and plugins need lifecycle control         | SDK-style authoring, routing, validation, evals, packaging, sync, and command-surface projections | [Skills SDK](https://github.com/jscraik/Agent-Skills)                                        |
-| Long-running agent work needs deterministic state | Fresh session loops with file memory, receipts, context snapshots, gates, and review exits        | [ralph-gold](https://github.com/jscraik/ralph-gold)                                          |
-| AI-assisted code needs recoverable context        | Local-first session-to-commit narrative, timelines, and search across the why behind changes      | [trace-narrative](https://github.com/jscraik/trace-narrative)                                |
-| Reviewers and agents need architecture evidence   | PR impact reports, repo orientation packs, policy validation, and agent handoff artifacts         | [diagram-cli](https://github.com/jscraik/diagram-cli)                                        |
-| Research and knowledge tools need agent-safe UX   | Scriptable CLIs with structured output, explicit policy gates, diagnostics, and safe defaults     | [rSearch](https://github.com/jscraik/rSearch), [wSearch](https://github.com/jscraik/wSearch) |
+| Operating problem | What I built | Repo proof |
+|---|---|---|
+| Agents need a safe next step, not a wall of docs | Cockpit-style commands, runtime cards, repo-local gates, and evidence-backed handoff | synAIpse / coding-harness private work |
+| Skills and plugins need lifecycle control | SDK-style authoring, routing, validation, evals, packaging, sync, and command-surface projections | [Skills SDK](https://github.com/jscraik/Agent-Skills) |
+| Long-running agent work needs deterministic state | Fresh session loops with file memory, receipts, context snapshots, gates, and review exits | [ralph-gold](https://github.com/jscraik/ralph-gold) |
+| AI-assisted code needs recoverable context | Local-first session-to-commit narrative, timelines, and search across the why behind changes | [trace-narrative](https://github.com/jscraik/trace-narrative) |
+| Reviewers and agents need architecture evidence | PR impact reports, repo orientation packs, policy validation, and agent handoff artifacts | [diagram-cli](https://github.com/jscraik/diagram-cli) |
+| Research and knowledge tools need agent-safe UX | Scriptable CLIs with structured output, explicit policy gates, diagnostics, and safe defaults | [rSearch](https://github.com/jscraik/rSearch), [wSearch](https://github.com/jscraik/wSearch) |
 
 ## Featured Work
 
-| Project                                                       | Why it matters                                                                                                           | Signal  |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [Agent-Skills](https://github.com/jscraik/Agent-Skills)       | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins.                          | 5 stars |
-| [ralph-gold](https://github.com/jscraik/ralph-gold)           | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules.        | 2 stars |
-| [trace-narrative](https://github.com/jscraik/trace-narrative) | Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes. | active  |
-| [diagram-cli](https://github.com/jscraik/diagram-cli)         | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams.       | active  |
-| [rSearch](https://github.com/jscraik/rSearch)                 | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client.                                  | active  |
-| [wSearch](https://github.com/jscraik/wSearch)                 | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.                                         | active  |
-| [mKit](https://github.com/jscraik/mKit)                       | MCP server boilerplate for Cloudflare Workers.                                                                           | 1 star  |
+| Project | Why it matters | Signal |
+|---|---|---|
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 5 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 2 stars |
+| [trace-narrative](https://github.com/jscraik/trace-narrative) | Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes. | active |
+| [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
+| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
+| [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
+| [mKit](https://github.com/jscraik/mKit) | MCP server boilerplate for Cloudflare Workers. | 1 star |
 
 ## Quick Start (Pick One)
 
@@ -99,27 +99,27 @@ wsearch --help
 
 ## More Projects
 
-- **[evals](https://github.com/jscraik/evals)** - Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.
-- **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
-- **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
-- **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
+* **[evals](https://github.com/jscraik/evals)** - Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.
+* **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
+* **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
+* **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
 
 ## The Search Family
 
 All published under `@brainwav` on npm:
 
-| CLI     | What it does                        | Install                          |
-| ------- | ----------------------------------- | -------------------------------- |
-| rSearch | arXiv paper search, fetch, download | `npm i -g @brainwav/rsearch`     |
-| wSearch | Wikidata REST/SPARQL queries        | `npm i -g @brainwav/wsearch-cli` |
+| CLI | What it does | Install |
+|-----|--------------|---------|
+| rSearch | arXiv paper search, fetch, download | `npm i -g @brainwav/rsearch` |
+| wSearch | Wikidata REST/SPARQL queries | `npm i -g @brainwav/wsearch-cli` |
 
 ## What I'm Doing
 
-- **Shipping synAIpse / coding-harness** - a portable AI delivery harness for agent-ready repos, review gates, runtime evidence, and safer PR handoff
-- **Building Skills SDK** - a governed SDK for Codex skills, plugins, evals, review closeout, and runtime projections
-- **Building deterministic agent loops** - using ralph-gold to keep task selection, gates, receipts, and exit rules explicit
-- **Making context durable** - connecting AI sessions, commits, project memory, architecture evidence, and review artifacts
-- **Publishing practical CLIs** - research, Wikidata, architecture, and repo-intelligence tools with structured output and agent-friendly diagnostics
+* **Shipping synAIpse / coding-harness** - a portable AI delivery harness for agent-ready repos, review gates, runtime evidence, and safer PR handoff
+* **Building Skills SDK** - a governed SDK for Codex skills, plugins, evals, review closeout, and runtime projections
+* **Building deterministic agent loops** - using ralph-gold to keep task selection, gates, receipts, and exit rules explicit
+* **Making context durable** - connecting AI sessions, commits, project memory, architecture evidence, and review artifacts
+* **Publishing practical CLIs** - research, Wikidata, architecture, and repo-intelligence tools with structured output and agent-friendly diagnostics
 
 ---
 
@@ -141,13 +141,13 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
-- **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
-- **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+* **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
   - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
-- **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+* **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
-- **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+* **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
   - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
 
 ---
