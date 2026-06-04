@@ -18,11 +18,11 @@
 
 > **From Demo to Duty:** turning promising AI experiments into repeatable engineering workflows that a real project can trust.
 
-**Now (Jun 3, 2026):** building Codex-first CLI tooling, agent instructions, and governance systems for AI-assisted engineering.
+**Now (Jun 4, 2026):** building Codex-first CLI tooling, agent instructions, and governance systems for AI-assisted engineering.
 
 By **harness**, I mean the operating layer around Codex: CLI tools, instructions, validation gates, repo workflows, and review loops that make AI-assisted coding repeatable.
 
-**Last updated:** 2026-06-03
+**Last updated:** 2026-06-04
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
