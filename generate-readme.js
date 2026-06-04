@@ -363,9 +363,9 @@ function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos)
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=840&lines=AI+Delivery+Harness+Builder;Codex-First+Engineering+That+Ships;Evidence%2C+Review+Gates%2C+Agent+Workflows" alt="AI Delivery Harness Builder, Codex-first engineering that ships, Evidence, review gates, agent workflows" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
-[![GitHub followers](https://img.shields.io/github/followers/${USERNAME}?label=Follow&style=for-the-badge&logo=github)](https://github.com/${USERNAME})
-[![Twitter Follow](https://img.shields.io/twitter/follow/${USERNAME}?style=for-the-badge&logo=x&logoColor=white&color=000000)](${SOCIAL_LINKS.twitter})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@${USERNAME}-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
+[![GitHub](https://img.shields.io/badge/GitHub-@${USERNAME}-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/${USERNAME})
+[![X](https://img.shields.io/badge/X-@${USERNAME}-000000?style=for-the-badge&logo=x&logoColor=white)](${SOCIAL_LINKS.twitter})
 
 </div>
 
@@ -477,8 +477,8 @@ ${archivedProjectsList || `* No archived projects currently listed.`}
 
 ## 📬 Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
-[![Twitter](https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white)](${SOCIAL_LINKS.twitter})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@${USERNAME}-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
+[![X](https://img.shields.io/badge/X-@${USERNAME}-000000?style=for-the-badge&logo=x&logoColor=white)](${SOCIAL_LINKS.twitter})
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](${SOCIAL_LINKS.email})
 `;
 }
