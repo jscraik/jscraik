@@ -34,12 +34,14 @@ const SOCIAL_LINKS = {
 
 // Manual featured projects (always included regardless of update time)
 const FEATURED_REPOS = [
+  'coding-harness',
   'Agent-Skills',
   'ralph-gold',
+  'trace-narrative',
+  'diagram-cli',
   'rSearch',
   'wSearch',
-  'mKit',
-  'Design-System'
+  'mKit'
 ];
 
 const CEMETERY_URL = 'https://jscraik.github.io/unfinished-cemetery';
@@ -50,11 +52,20 @@ const ARCHIVED_SECTION_TITLE = '## Learning In Public';
 // they appear with consistent descriptions across the README. A startup assertion
 // below validates this coupling.
 const REPO_DISPLAY_OVERRIDES = {
+  'coding-harness': {
+    description: 'synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff.'
+  },
   'Agent-Skills': {
-    description: 'Codex-first skill catalog for authoring, validating, and syncing AI coding skills across local agent workflows.'
+    description: 'Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins.'
   },
   'ralph-gold': {
-    description: 'A Golden Ralph Loop orchestrator for running fresh Codex sessions in a deterministic implementation loop.'
+    description: 'Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules.'
+  },
+  'trace-narrative': {
+    description: 'Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes.'
+  },
+  'diagram-cli': {
+    description: 'Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams.'
   },
   'rSearch': {
     description: 'Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client.'
@@ -68,8 +79,11 @@ const REPO_DISPLAY_OVERRIDES = {
   'Design-System': {
     description: 'Cross-platform UI workbench and component system for ChatGPT widgets and React apps.'
   },
+  'evals': {
+    description: 'Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.'
+  },
   'code-archaeology-kit': {
-    description: 'Tools and scripts for archeological analysis of codebases, commit history, and development patterns.'
+    description: 'Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.'
   },
   'unfinished-cemetery': {
     description: 'A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.'
@@ -312,7 +326,7 @@ wsearch --help
   const activeRepoNames = new Set(activeRepos.map((repo) => repo.name));
 
   return quickStarts
-    .filter((item) => activeRepoNames.has(item.repoName))
+    .filter((item) => item.alwaysInclude || activeRepoNames.has(item.repoName))
     .map((item) => item.snippet)
     .join('\n\n');
 }
@@ -347,7 +361,7 @@ function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos)
 
 # Jamie Scott Craik
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=760&lines=Grumpy+Old+Vet%2C+Solo+Harness+Builder;From+Demo+To+Duty;Codex-First+Engineering+That+Ships" alt="Grumpy Old Vet, Solo Harness Builder, From Demo to Duty, Codex-first engineering that ships" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=840&lines=AI+Delivery+Harness+Builder;Codex-First+Engineering+That+Ships;Evidence%2C+Review+Gates%2C+Agent+Workflows" alt="AI Delivery Harness Builder, Codex-first engineering that ships, Evidence, review gates, agent workflows" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
 [![GitHub followers](https://img.shields.io/github/followers/${USERNAME}?label=Follow&style=for-the-badge&logo=github)](https://github.com/${USERNAME})
@@ -357,45 +371,56 @@ function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos)
 
 ---
 
-## Grumpy Old Vet, Solo Harness Builder
+## Harness Builder, "Grumpy Old Vet"
 
 **British Army veteran | Founder, brAInwav | Codex-first toolmaker**
 
-> **From Demo to Duty:** turning promising AI experiments into repeatable engineering workflows that a real project can trust.
+> Codex writes the code. I lead, inspect, and make the work accountable. The value is using both strengths properly.
 
-**Now (${timestamp}):** building Codex-first CLI tooling, agent instructions, and governance systems for AI-assisted engineering.
+**Now (${timestamp}):** building synAIpse, Skills SDK, deterministic agent loops, and evidence tooling for teams that want AI coding to ship without losing trust.
 
-By **harness**, I mean the operating layer around Codex: CLI tools, instructions, validation gates, repo workflows, and review loops that make AI-assisted coding repeatable.
+By **harness**, I mean the operating layer around Codex and other coding agents: CLI entrypoints, repo-local guardrails, runtime evidence, review policy, memory, and handoff artifacts that make AI-assisted engineering repeatable.
 
 **Last updated:** ${isoDate}
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
-![Focus](https://img.shields.io/badge/Focus-Solo_Harness_Builder-00ADD8?style=flat-square&logo=openai&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-AI_Delivery_Harness-00ADD8?style=flat-square&logo=openai&logoColor=white)
 
 ---
 
-## From Demo To Duty
+## What I Build
 
-I build the harness around Codex so AI coding can move from impressive demos to dependable project work:
+I build the layer that lets humans use coding agents with more confidence:
 
-* fresh implementation loops
-* CLI research and knowledge tools
-* MCP/server foundations
-* instruction packs and validation gates
-* repo governance that keeps human intent visible
+* **Agent-ready repos** with clear entrypoints, preflight checks, validation gates, and rollback-aware workflows
+* **Runtime evidence** that separates local test truth from PR state, CI, review threads, tracker status, and merge readiness
+* **Capability systems** for skills, plugins, prompts, hooks, and review agents that can be validated instead of merely trusted
+* **CLI products** that make research, architecture, knowledge, and repo intelligence available to humans and agents
+* **Local-first memory and narrative tools** that preserve intent, decisions, receipts, and context across long-running work
 
 ## Working Stack
 
-Codex, OpenAI, MCP, TypeScript, Node.js, React, Swift, SwiftUI, Python, Bash, macOS, GitHub Actions, CircleCI, CodeRabbit.
+Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, Bash, macOS, GitHub Actions, CircleCI, CodeRabbit.
 
 ## TL;DR
 
-**Problem:** OSS teams and founders need fast, reliable AI tooling they can trust.
+**Problem:** AI coding is fast, but speed is not enough. Teams still need current context, bounded autonomy, repeatable validation, review evidence, and a clean handoff back to humans.
 
-**Solution:** I build pragmatic Codex-first harnesses: CLIs, instruction systems, validation gates, and governance tools that turn experiments into safe, repeatable workflows.
+**Solution:** I build pragmatic Codex-first harnesses: CLIs, instruction systems, skills, evals, review gates, runtime cards, and workflow evidence that turn experiments into dependable engineering operations.
 
-**Why it helps:** Clear defaults, fast setup, and tools that scale from solo dev to team.
+**Why it helps:** Shorter review loops, fewer vague agent claims, clearer operational defaults, and repos that are easier for both people and agents to pick up safely.
+
+## Proof From My Local Repos
+
+| Operating problem | What I built | Repo proof |
+|---|---|---|
+| Agents need a safe next step, not a wall of docs | Cockpit-style commands, runtime cards, repo-local gates, and evidence-backed handoff | synAIpse / coding-harness private work |
+| Skills and plugins need lifecycle control | SDK-style authoring, routing, validation, evals, packaging, sync, and command-surface projections | [Skills SDK](https://github.com/${USERNAME}/Agent-Skills) |
+| Long-running agent work needs deterministic state | Fresh session loops with file memory, receipts, context snapshots, gates, and review exits | [ralph-gold](https://github.com/${USERNAME}/ralph-gold) |
+| AI-assisted code needs recoverable context | Local-first session-to-commit narrative, timelines, and search across the why behind changes | [trace-narrative](https://github.com/${USERNAME}/trace-narrative) |
+| Reviewers and agents need architecture evidence | PR impact reports, repo orientation packs, policy validation, and agent handoff artifacts | [diagram-cli](https://github.com/${USERNAME}/diagram-cli) |
+| Research and knowledge tools need agent-safe UX | Scriptable CLIs with structured output, explicit policy gates, diagnostics, and safe defaults | [rSearch](https://github.com/${USERNAME}/rSearch), [wSearch](https://github.com/${USERNAME}/wSearch) |
 
 ## Featured Work
 
@@ -420,23 +445,25 @@ All published under \`@brainwav\` on npm:
 
 ## What I'm Doing
 
-* **Current focus** - Making \`ralph-gold\`, \`Agent-Skills\`, and the \`brainwav\` CLIs more reliable and production-ready
-* **Engineering deterministic AI workflows** - Shipping [ralph-gold](https://github.com/jscraik/ralph-gold) to run fresh Codex sessions in a repeatable loop
-* **Publishing practical AI tooling** - Maintaining [rSearch](https://github.com/jscraik/rSearch) and [wSearch](https://github.com/jscraik/wSearch) CLIs for research, search, and query workflows
-* **Building agent infrastructure** - Evolving [mKit](https://github.com/jscraik/mKit) as a practical MCP/Cloudflare Workers foundation for AI tooling
-* **Improving developer operations** - Building reusable tooling ecosystems like [Agent-Skills](https://github.com/jscraik/Agent-Skills), [code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit), [trace-narrative](https://github.com/jscraik/trace-narrative), and [Design-System](https://github.com/jscraik/Design-System)
+* **Shipping synAIpse / coding-harness** - a portable AI delivery harness for agent-ready repos, review gates, runtime evidence, and safer PR handoff
+* **Building Skills SDK** - a governed SDK for Codex skills, plugins, evals, review closeout, and runtime projections
+* **Building deterministic agent loops** - using ralph-gold to keep task selection, gates, receipts, and exit rules explicit
+* **Making context durable** - connecting AI sessions, commits, project memory, architecture evidence, and review artifacts
+* **Publishing practical CLIs** - research, Wikidata, architecture, and repo-intelligence tools with structured output and agent-friendly diagnostics
 
 ---
 
 ## Work With Me On
 
-**Agentic developer workflows** - Codex, MCP, review loops, PR automation, and validation gates
+**AI delivery harnesses** - make a repo safer for Codex and other coding agents with entrypoints, gates, evidence, and handoff contracts
 
-**CLI tools** - research, knowledge, search, repo automation, and developer UX
+**Agentic developer workflows** - Codex, MCP, review loops, PR automation, runtime cards, and validation policy
 
-**AI governance** - instructions, drift control, and repeatable workflows that keep human intent visible
+**Developer tooling and CLIs** - research, knowledge, architecture evidence, repo automation, diagnostics, and machine-readable UX
 
-**Grumpy Old Vet product thinking** - turning messy prototypes into dependable tools without losing the human intent
+**AI governance that actually runs** - instructions, drift control, evals, skill lifecycle, review gates, and repeatable workflows that keep human intent visible
+
+**Founder/operator advisory** - turn messy prototypes into dependable AI-assisted product and engineering systems without losing the point of the work
 
 ---
 
