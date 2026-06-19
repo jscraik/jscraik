@@ -99,10 +99,10 @@ wsearch --help
 
 ## More Projects
 
+* **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 * **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
 * **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
 * **[evals](https://github.com/jscraik/evals)** - Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.
-* **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 
 ## The Search Family
 
