@@ -67,7 +67,7 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 
 | Project | Why it matters | Signal |
 |---|---|---|
-| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 5 stars |
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 6 stars |
 | [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 2 stars |
 | [trace-narrative](https://github.com/jscraik/trace-narrative) | Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes. | active |
 | [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
