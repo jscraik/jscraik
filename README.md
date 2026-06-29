@@ -67,12 +67,43 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 
 | Project | Why it matters | Signal |
 |---|---|---|
+| [coding-harness](https://github.com/jscraik/coding-harness) | synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff. | active |
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 6 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 2 stars |
+| [trace-narrative](https://github.com/jscraik/trace-narrative) | Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes. | active |
+| [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
+| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
+| [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
+| [mKit](https://github.com/jscraik/mKit) | MCP server boilerplate for Cloudflare Workers. | 1 star |
 
 ## Quick Start (Pick One)
 
 ```bash
-# Quick start commands will be updated as active projects change
+# ralph-gold
+gh repo clone jscraik/ralph-gold
+cd ralph-gold
+uv tool install -e .
+ralph --help
 ```
+
+```bash
+# rSearch
+npm i -g @brainwav/rsearch
+rsearch --help
+```
+
+```bash
+# wSearch
+npm i -g @brainwav/wsearch-cli
+wsearch --help
+```
+
+## More Projects
+
+* **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
+* **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
+* **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
+* **[evals](https://github.com/jscraik/evals)** - Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.
 
 ## The Search Family
 
@@ -111,7 +142,14 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
-* No archived projects currently listed.
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
+* **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
+  - GitHub: [jscraik/zSearch](https://github.com/jscraik/zSearch)
+* **[data-dashboard](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/data-dashboard](https://github.com/jscraik/data-dashboard)
+* **[jules-companion](https://jscraik.github.io/unfinished-cemetery)**
+  - GitHub: [jscraik/jules-companion](https://github.com/jscraik/jules-companion)
 
 ---
 
