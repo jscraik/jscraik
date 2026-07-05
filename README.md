@@ -102,7 +102,6 @@ wsearch --help
 
 * **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 * **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
-* **[code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
 * **[evals](https://github.com/jscraik/evals)** - Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.
 
 ## The Search Family
@@ -142,6 +141,10 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
+* **[system-design.md](https://jscraik.github.io/unfinished-cemetery)** - A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
+  - GitHub: [jscraik/system-design.md](https://github.com/jscraik/system-design.md)
+* **[code-archaeology-kit](https://jscraik.github.io/unfinished-cemetery)** - Privacy-aware git-history intelligence for churn, temporal coupling, abandoned structures, and cleanup targets.
+  - GitHub: [jscraik/code-archaeology-kit](https://github.com/jscraik/code-archaeology-kit)
 * **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
   - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 * **[zSearch](https://jscraik.github.io/unfinished-cemetery)** - Z.AI capabilities CLI and MCP server for agents and automation
