@@ -18,11 +18,11 @@
 
 > Codex writes the code. I lead, inspect, and make the work accountable. The value is using both strengths properly.
 
-**Now (Aug 24, 2026):** building synAIpse, Skills SDK, deterministic agent loops, and evidence tooling for teams that want AI coding to ship without losing trust.
+**Now (Aug 25, 2026):** building synAIpse, Skills SDK, deterministic agent loops, and evidence tooling for teams that want AI coding to ship without losing trust.
 
 By **harness**, I mean the operating layer around Codex and other coding agents: CLI entrypoints, repo-local guardrails, runtime evidence, review policy, memory, and handoff artifacts that make AI-assisted engineering repeatable.
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-08-25
 
 ![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
 ![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
@@ -100,6 +100,7 @@ wsearch --help
 
 ## More Projects
 
+* **[skills-sdk](https://github.com/jscraik/skills-sdk)**
 * **[skillsbar](https://github.com/jscraik/skillsbar)**
 * **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 * **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
