@@ -69,7 +69,7 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 |---|---|---|
 | [coding-harness](https://github.com/jscraik/coding-harness) | synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff. | active |
 | [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 9 stars |
-| [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 2 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 3 stars |
 | [trace-narrative](https://github.com/jscraik/trace-narrative) | Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes. | active |
 | [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
 | [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
