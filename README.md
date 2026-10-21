@@ -100,7 +100,7 @@ wsearch --help
 
 ## More Projects
 
-* **[skillsbar](https://github.com/jscraik/skillsbar)**
+* **[skillsproof](https://github.com/jscraik/skillsproof)**
 * **[skills-sdk](https://github.com/jscraik/skills-sdk)** - Independent Python SDK and CLI for validating, evaluating and preparing AI agent skills and plugins, with versioned contracts, candidate-bound evidence and portable integration adapters.
 * **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 * **[unfinished-cemetery](https://github.com/jscraik/unfinished-cemetery)** - A ritualised archive of abandoned projects — post-mortems for software that died so we could learn what lives.
