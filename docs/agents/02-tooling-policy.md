@@ -6,6 +6,7 @@
 - exec: `npm exec <command>`
 
 ## Core tooling
-- Run shell commands with `zsh -lc`.
+- Use the configured non-login shell. Use a login shell only for a bounded
+  shell-startup investigation.
 - Prefer `rg`, `fd`, and `jq`.
 - Read `/Users/jamiecraik/.codex/instructions/tooling.md` before selecting tools.
