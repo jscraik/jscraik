@@ -67,12 +67,43 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 
 | Project | Why it matters | Signal |
 |---|---|---|
+| [coding-harness](https://github.com/jscraik/coding-harness) | synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff. | active |
+| [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 9 stars |
+| [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 3 stars |
+| [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
+| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client. | active |
+| [wSearch](https://github.com/jscraik/wSearch) | Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal. | active |
+| [mKit](https://github.com/jscraik/mKit) | MCP server boilerplate for Cloudflare Workers. | 1 star |
 
 ## Quick Start (Pick One)
 
 ```bash
-# Quick start commands will be updated as active projects change
+# ralph-gold
+gh repo clone jscraik/ralph-gold
+cd ralph-gold
+uv tool install -e .
+ralph --help
 ```
+
+```bash
+# rSearch
+npm i -g @brainwav/rsearch
+rsearch --help
+```
+
+```bash
+# wSearch
+npm i -g @brainwav/wsearch-cli
+wsearch --help
+```
+
+## More Projects
+
+* **[skills-sdk](https://github.com/jscraik/skills-sdk)** - Independent Python SDK and CLI for validating, evaluating and preparing AI agent skills and plugins, with versioned contracts, candidate-bound evidence and portable integration adapters.
+* **[dots](https://github.com/jscraik/dots)**
+* **[websites](https://github.com/jscraik/websites)**
+* **[skillsproof](https://github.com/jscraik/skillsproof)**
+* **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 
 ## The Search Family
 
@@ -111,7 +142,8 @@ All published under `@brainwav` on npm:
 
 I keep an archive of retired experiments at [unfinished-cemetery](https://jscraik.github.io/unfinished-cemetery): short post-mortems for software that taught something useful before it was retired.
 
-* No archived projects currently listed.
+* **[xKit](https://jscraik.github.io/unfinished-cemetery)** - Unofficial X Web API Toolkit
+  - GitHub: [jscraik/xKit](https://github.com/jscraik/xKit)
 
 ---
 
