@@ -4,9 +4,9 @@
  * GitHub Profile README Generator for jscraik
  *
  * Fetches live data from GitHub API and regenerates README.md with:
- * - Dynamic "Now" timestamp
- * - Active repository list with star counts
- * - Social links (extracted from existing README or defaults)
+ * - Six featured projects with concrete starting points
+ * - Public repository inventory with current project names
+ * - Separate editorial-review and inventory-refresh dates
  *
  * Run via: npm start
  */
@@ -22,6 +22,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // =============================================================================
 
 const USERNAME = 'jscraik';
+const CONTENT_REVIEWED_ON = '2026-11-24';
 const GITHUB_API_BASE = 'https://api.github.com';
 const REPO_UPDATED_DAYS_THRESHOLD = 365; // Include repos updated within past year
 
@@ -34,17 +35,13 @@ const SOCIAL_LINKS = {
 
 // Manual featured projects (always included regardless of update time)
 const FEATURED_REPOS = [
-  'coding-harness',
-  'Agent-Skills',
-  'ralph-gold',
-  'trace-narrative',
+  'skills-sdk',
+  'skillsproof',
   'diagram-cli',
   'rSearch',
-  'wSearch',
-  'mKit'
+  'ralph-gold'
 ];
 
-const CEMETERY_URL = 'https://jscraik.github.io/unfinished-cemetery';
 const ARCHIVED_SECTION_TITLE = '## Learning In Public';
 
 // REPO_DISPLAY_OVERRIDES provides custom descriptions for repositories.
@@ -52,32 +49,58 @@ const ARCHIVED_SECTION_TITLE = '## Learning In Public';
 // they appear with consistent descriptions across the README. A startup assertion
 // below validates this coupling.
 const REPO_DISPLAY_OVERRIDES = {
-  'coding-harness': {
-    description: 'synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff.'
+  'skills-sdk': {
+    label: 'Skills SDK',
+    description: 'Python contracts and a local CLI for checking Agent Skills packages. Early contract-building work; validation limits are explicit.',
+    entryLabel: 'Inspect the synthetic skill fixture',
+    entryPath: 'tree/main/tests/fixtures/synthetic-skill'
   },
-  'Agent-Skills': {
-    description: 'Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins.'
-  },
-  'ralph-gold': {
-    description: 'Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules.'
-  },
-  'trace-narrative': {
-    description: 'Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes.'
+  'skillsproof': {
+    label: 'SkillsProof',
+    description: 'Native macOS menu-bar prototype for inspecting Skills SDK evidence. Includes a clearly labelled demo fixture.',
+    entryLabel: 'Inspect the demo guide',
+    entryPath: 'blob/main/DEMO.md'
   },
   'diagram-cli': {
-    description: 'Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams.'
+    label: 'Archscope (diagram-cli)',
+    description: 'Architecture evidence and reports for repository orientation, PR review and agent handoff.',
+    entryLabel: 'Generate a first report',
+    entryPath: 'blob/main/README.md#quick-start'
   },
   'rSearch': {
-    description: 'Search, fetch, and download arXiv papers from the terminal. CLI plus TypeScript client.'
+    label: 'rSearch',
+    description: 'Search, fetch and download arXiv papers from the terminal, with a TypeScript client.',
+    entryLabel: 'Run a first paper search',
+    entryPath: 'blob/main/README.md#quickstart'
   },
-  'wSearch': {
-    description: 'Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.'
+  'ralph-gold': {
+    label: 'ralph-gold',
+    description: 'Agent-loop orchestration with durable task state, validation gates and receipts.',
+    entryLabel: 'Read the setup and first-task guide',
+    entryPath: 'blob/main/README.md'
+  },
+  'Agent-Skills': {
+    label: 'Agent Skills Kit (Agent-Skills)',
+    description: 'Transitional skills kit being separated from the independent Skills SDK and Skills Foundry. The README explains current ownership and migration limits.'
   },
   'mKit': {
     description: 'MCP server boilerplate for Cloudflare Workers.'
   },
+  'dots': {
+    description: 'Workstation configuration and Codex policy with a disposable-home preview and documented activation and rollback.'
+  },
+  'websites': {
+    description: 'Source for my Astro portfolio, documenting AI-assisted developer tooling and practical engineering work.'
+  },
+  'wSearch': {
+    description: 'Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.'
+  },
   'Design-System': {
-    description: 'Cross-platform UI workbench and component system for ChatGPT widgets and React apps.'
+    label: 'aStudio (Design-System)',
+    description: 'UI workbench and component system for ChatGPT widgets and React apps.'
+  },
+  'trace-narrative': {
+    description: 'Local-first app that links AI sessions, intent, commits, and timelines so teams can recover the why behind code changes.'
   },
   'evals': {
     description: 'Shared local eval runner for artifact integrity, schema validity, evidence-backed claims, and deterministic scorer verdicts.'
@@ -173,6 +196,7 @@ function filterActiveRepos(repos) {
 
     // Skip archived repos from active listings
     if (repo.archived) return false;
+    if (repo.name === 'coding-harness') return false;
 
     // Skip explicitly excluded repos
     if (EXCLUDED_REPOS.includes(repo.name)) return false;
@@ -221,19 +245,7 @@ function sortRepos(repos) {
 // =============================================================================
 
 /**
- * Generate "Now" timestamp in format "MMM DD, YYYY"
- */
-function generateTimestamp() {
-  const now = new Date();
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const month = months[now.getMonth()];
-  const day = now.getDate();
-  const year = now.getFullYear();
-  return `${month} ${day}, ${year}`;
-}
-
-/**
- * Generate ISO date for "Last updated" badge
+ * Generate ISO date for the public inventory refresh
  */
 function generateISODate() {
   return new Date().toISOString().split('T')[0];
@@ -258,77 +270,25 @@ function truncateDescription(description, maxLength = 220) {
   return description.slice(0, maxLength - 3) + '...';
 }
 
-function buildRepoBullet(repo, options = {}) {
-  const { useCemetery, includeStars = true } = options;
+function buildRepoBullet(repo) {
   const display = REPO_DISPLAY_OVERRIDES[repo.name] || {};
-  const stars = includeStars && repo.stargazers_count > 0 ? ` ⭐ ${formatStars(repo.stargazers_count)}` : '';
+  const label = display.label || repo.name;
   const descriptionSource = display.description || repo.description;
   const description = descriptionSource ? ` - ${truncateDescription(descriptionSource)}` : '';
-  const repoUrl = useCemetery ? CEMETERY_URL : `https://github.com/${USERNAME}/${repo.name}`;
-  const githubLink = useCemetery
-    ? `\n  - GitHub: [${USERNAME}/${repo.name}](https://github.com/${USERNAME}/${repo.name})`
-    : '';
-
-  return `* **[${repo.name}](${repoUrl})**${stars}${description}${githubLink}`;
+  return `* **[${label}](https://github.com/${USERNAME}/${repo.name})**${description}`;
 }
 
 function buildFeaturedProjectsTable(featuredRepos) {
   const rows = featuredRepos.map((repo) => {
-    const display = REPO_DISPLAY_OVERRIDES[repo.name] || {};
-    const stars = repo.stargazers_count > 0
-      ? `${formatStars(repo.stargazers_count)} star${repo.stargazers_count === 1 ? '' : 's'}`
-      : '';
-    const signal = stars || 'active';
-    const description = truncateDescription(display.description || repo.description || 'Active project.');
-    return `| [${repo.name}](https://github.com/${USERNAME}/${repo.name}) | ${description} | ${signal} |`;
+    const display = REPO_DISPLAY_OVERRIDES[repo.name];
+    const repoUrl = `https://github.com/${USERNAME}/${repo.name}`;
+    return `| [${display.label || repo.name}](${repoUrl}) | ${display.description} | [${display.entryLabel}](${repoUrl}/${display.entryPath}) |`;
   });
-
   return [
-    '| Project | Why it matters | Signal |',
+    '| Project | What you can inspect or try | Start here |',
     '|---|---|---|',
     ...rows
   ].join('\n');
-}
-
-function buildQuickStartCommands(activeRepos) {
-  const quickStarts = [
-    {
-      repoName: 'ralph-gold',
-      snippet:
-`\`\`\`bash
-# ralph-gold
-gh repo clone ${USERNAME}/ralph-gold
-cd ralph-gold
-uv tool install -e .
-ralph --help
-\`\`\``
-    },
-    {
-      repoName: 'rSearch',
-      snippet:
-`\`\`\`bash
-# rSearch
-npm i -g @brainwav/rsearch
-rsearch --help
-\`\`\``
-    },
-    {
-      repoName: 'wSearch',
-      snippet:
-`\`\`\`bash
-# wSearch
-npm i -g @brainwav/wsearch-cli
-wsearch --help
-\`\`\``
-    },
-  ];
-
-  const activeRepoNames = new Set(activeRepos.map((repo) => repo.name));
-
-  return quickStarts
-    .filter((item) => item.alwaysInclude || activeRepoNames.has(item.repoName))
-    .map((item) => item.snippet)
-    .join('\n\n');
 }
 
 // =============================================================================
@@ -339,147 +299,73 @@ wsearch --help
  * Generate the complete README markdown content
  */
 function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos) {
-  const timestamp = generateTimestamp();
   const isoDate = generateISODate();
-  const archivedRepos = allRepos.filter((repo) => repo.archived && !EXCLUDED_REPOS.includes(repo.name));
-
-  // Split active repos into featured and more
-  const featuredRepos = activeRepos.filter((r) => FEATURED_REPOS.includes(r.name));
-  const moreRepos = activeRepos.filter((r) => !FEATURED_REPOS.includes(r.name));
-
-  // Generate featured projects table
+  const archivedRepos = allRepos.filter((repo) => repo.archived && repo.name !== 'coding-harness' && !EXCLUDED_REPOS.includes(repo.name));
+  const featuredRepos = activeRepos.filter((repo) => FEATURED_REPOS.includes(repo.name));
+  const moreRepos = activeRepos.filter((repo) => !FEATURED_REPOS.includes(repo.name));
   const featuredProjectsTable = buildFeaturedProjectsTable(featuredRepos);
+  const moreProjectsList = moreRepos.map(buildRepoBullet).join('\n');
+  const archivedProjectsList = archivedRepos.map(buildRepoBullet).join('\n');
 
-  // Generate more projects list
-  const moreProjectsList = moreRepos.map((repo) => buildRepoBullet(repo)).join('\n');
-  const archivedProjectsList = archivedRepos
-    .map((repo) => buildRepoBullet(repo, { useCemetery: true, includeStars: false }))
-    .join('\n');
-  const quickStartCommands = buildQuickStartCommands(activeRepos);
+  return `# Jamie Scott Craik
 
-  return `<div align="center">
+**British Army veteran | Founder, brAInwav | Software development student**
 
-# Jamie Scott Craik
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=6B46C1&center=true&vCenter=true&width=840&lines=AI+Delivery+Harness+Builder;Codex-First+Engineering+That+Ships;Evidence%2C+Review+Gates%2C+Agent+Workflows" alt="AI Delivery Harness Builder, Codex-first engineering that ships, Evidence, review gates, agent workflows" />
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@${USERNAME}-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
-[![GitHub](https://img.shields.io/badge/GitHub-@${USERNAME}-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/${USERNAME})
-[![X](https://img.shields.io/badge/X-@${USERNAME}-000000?style=for-the-badge&logo=x&logoColor=white)](${SOCIAL_LINKS.twitter})
-
-</div>
-
----
-
-## Harness Builder, "Grumpy Old Vet"
-
-**British Army veteran | Founder, brAInwav | Codex-first toolmaker**
+I build tools for AI-assisted engineering: checking Agent Skills, making coding-agent work easier to inspect, and turning research and repository information into useful CLI output.
 
 > Codex writes the code. I lead, inspect, and make the work accountable. The value is using both strengths properly.
 
-**Now (${timestamp}):** building synAIpse, Skills SDK, deterministic agent loops, and evidence tooling for teams that want AI coding to ship without losing trust.
-
-By **harness**, I mean the operating layer around Codex and other coding agents: CLI entrypoints, repo-local guardrails, runtime evidence, review policy, memory, and handoff artifacts that make AI-assisted engineering repeatable.
-
-**Last updated:** ${isoDate}
-
-![Philosophy](https://img.shields.io/badge/Philosophy-From_Demo_To_Duty-6B46C1?style=flat-square&logo=rocket&logoColor=white)
-![Mode](https://img.shields.io/badge/Mode-Codex--First-F39C12?style=flat-square&logo=terminal&logoColor=white)
-![Focus](https://img.shields.io/badge/Focus-AI_Delivery_Harness-00ADD8?style=flat-square&logo=openai&logoColor=white)
-
----
-
-## What I Build
-
-I build the layer that lets humans use coding agents with more confidence:
-
-* **Agent-ready repos** with clear entrypoints, preflight checks, validation gates, and rollback-aware workflows
-* **Runtime evidence** that separates local test truth from PR state, CI, review threads, tracker status, and merge readiness
-* **Capability systems** for skills, plugins, prompts, hooks, and review agents that can be validated instead of merely trusted
-* **CLI products** that make research, architecture, knowledge, and repo intelligence available to humans and agents
-* **Local-first memory and narrative tools** that preserve intent, decisions, receipts, and context across long-running work
-
-## Working Stack
-
-Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, Bash, macOS, GitHub Actions, CircleCI, CodeRabbit.
-
-## TL;DR
-
-**Problem:** AI coding is fast, but speed is not enough. Teams still need current context, bounded autonomy, repeatable validation, review evidence, and a clean handoff back to humans.
-
-**Solution:** I build pragmatic Codex-first harnesses: CLIs, instruction systems, skills, evals, review gates, runtime cards, and workflow evidence that turn experiments into dependable engineering operations.
-
-**Why it helps:** Shorter review loops, fewer vague agent claims, clearer operational defaults, and repos that are easier for both people and agents to pick up safely.
-
-## Proof From My Local Repos
-
-| Operating problem | What I built | Repo proof |
-|---|---|---|
-| Agents need a safe next step, not a wall of docs | Cockpit-style commands, runtime cards, repo-local gates, and evidence-backed handoff | synAIpse / coding-harness private work |
-| Skills and plugins need lifecycle control | SDK-style authoring, routing, validation, evals, packaging, sync, and command-surface projections | [Skills SDK](https://github.com/${USERNAME}/Agent-Skills) |
-| Long-running agent work needs deterministic state | Fresh session loops with file memory, receipts, context snapshots, gates, and review exits | [ralph-gold](https://github.com/${USERNAME}/ralph-gold) |
-| AI-assisted code needs recoverable context | Local-first session-to-commit narrative, timelines, and search across the why behind changes | [trace-narrative](https://github.com/${USERNAME}/trace-narrative) |
-| Reviewers and agents need architecture evidence | PR impact reports, repo orientation packs, policy validation, and agent handoff artifacts | [diagram-cli](https://github.com/${USERNAME}/diagram-cli) |
-| Research and knowledge tools need agent-safe UX | Scriptable CLIs with structured output, explicit policy gates, diagnostics, and safe defaults | [rSearch](https://github.com/${USERNAME}/rSearch), [wSearch](https://github.com/${USERNAME}/wSearch) |
+[LinkedIn](${SOCIAL_LINKS.linkedin}) · [X](${SOCIAL_LINKS.twitter}) · [Email](${SOCIAL_LINKS.email})
 
 ## Featured Work
 
+Choose a task or inspect a concrete example. Each repository explains its current status, prerequisites and evidence limits.
+
 ${featuredProjectsTable}
 
-## Quick Start (Pick One)
+## How the Skills Projects Fit Together
 
-${quickStartCommands || '```bash\n# Quick start commands will be updated as active projects change\n```'}
+- **[Skills SDK](https://github.com/${USERNAME}/skills-sdk):** the independent Python SDK and local CLI for package contracts and validation.
+- **[Agent Skills Kit](https://github.com/${USERNAME}/Agent-Skills):** the transitional kit being separated from SDK and Foundry responsibilities. Its README records what has and has not moved.
+- **[SkillsProof](https://github.com/${USERNAME}/skillsproof):** a native macOS evidence-viewer prototype, previously called SkillsBar. Its demo fixture is labelled separately from live evidence.
 
-${moreRepos.length > 0 ? `## More Projects
+The migration is still in progress. A source example, local check, hosted CI result and public release establish different things; I keep those boundaries explicit.
+
+## What I Bring to the Work
+
+Twenty-two years in Army logistics, leadership and instruction shaped how I approach software: understand the problem, clarify ownership, build a bounded solution, test it honestly and explain the result.
+
+I'm developing practical experience in developer tooling, AI-assisted workflows and technical education. I set direction, question assumptions, inspect the implementation and remain accountable for what ships.
+
+By **harness**, I mean the operating layer around coding agents: entrypoints, repository checks, evidence, review policy and handoffs.
+
+**Working stack:** Python, TypeScript, Node.js, React, Swift/SwiftUI, macOS, Codex, MCP, GitHub Actions and CircleCI.
+
+${moreRepos.length ? `## More Projects
 
 ${moreProjectsList}
 
-` : ''}## The Search Family
+` : ''}## Work With Me On
 
-All published under \`@brainwav\` on npm:
+- Practical developer tools and CLI workflows.
+- Agent Skills, evaluations and evidence-backed AI-assisted engineering.
+- Developer experience, technical education and clear project documentation.
 
-| CLI | What it does | Install |
-|-----|--------------|---------|
-| rSearch | arXiv paper search, fetch, download | \`npm i -g @brainwav/rsearch\` |
-| wSearch | Wikidata REST/SPARQL queries | \`npm i -g @brainwav/wsearch-cli\` |
-
-## What I'm Doing
-
-* **Shipping synAIpse / coding-harness** - a portable AI delivery harness for agent-ready repos, review gates, runtime evidence, and safer PR handoff
-* **Building Skills SDK** - a governed SDK for Codex skills, plugins, evals, review closeout, and runtime projections
-* **Building deterministic agent loops** - using ralph-gold to keep task selection, gates, receipts, and exit rules explicit
-* **Making context durable** - connecting AI sessions, commits, project memory, architecture evidence, and review artifacts
-* **Publishing practical CLIs** - research, Wikidata, architecture, and repo-intelligence tools with structured output and agent-friendly diagnostics
-
----
-
-## Work With Me On
-
-**AI delivery harnesses** - make a repo safer for Codex and other coding agents with entrypoints, gates, evidence, and handoff contracts
-
-**Agentic developer workflows** - Codex, MCP, review loops, PR automation, runtime cards, and validation policy
-
-**Developer tooling and CLIs** - research, knowledge, architecture evidence, repo automation, diagnostics, and machine-readable UX
-
-**AI governance that actually runs** - instructions, drift control, evals, skill lifecycle, review gates, and repeatable workflows that keep human intent visible
-
-**Founder/operator advisory** - turn messy prototypes into dependable AI-assisted product and engineering systems without losing the point of the work
-
----
+[Get in touch](${SOCIAL_LINKS.email}) or [connect on LinkedIn](${SOCIAL_LINKS.linkedin}).
 
 ${ARCHIVED_SECTION_TITLE}
 
-I keep an archive of retired experiments at [unfinished-cemetery](${CEMETERY_URL}): short post-mortems for software that taught something useful before it was retired.
+Archived experiments remain available as historical source. Their archive status does not imply current support or compatibility.
 
-${archivedProjectsList || `* No archived projects currently listed.`}
+- [SynAIpse (Coding Harness)](https://github.com/${USERNAME}/coding-harness) is retired. The repository records my earlier work on evidence-backed delivery.
+
+${archivedProjectsList || '* No archived projects currently listed.'}
 
 ---
 
-## 📬 Connect
+**Content reviewed:** ${CONTENT_REVIEWED_ON} · **Public repository inventory refreshed:** ${isoDate}
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@${USERNAME}-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${SOCIAL_LINKS.linkedin})
-[![X](https://img.shields.io/badge/X-@${USERNAME}-000000?style=for-the-badge&logo=x&logoColor=white)](${SOCIAL_LINKS.twitter})
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](${SOCIAL_LINKS.email})
+This profile is generated from [generate-readme.js](generate-readme.js). The inventory refresh date records generation, not a new test run or editorial review.
 `;
 }
 
