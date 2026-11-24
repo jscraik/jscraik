@@ -87,10 +87,10 @@ const REPO_DISPLAY_OVERRIDES = {
     description: 'MCP server boilerplate for Cloudflare Workers.'
   },
   'dots': {
-    description: 'Workstation configuration and Codex policy with a disposable-home preview and explicit activation boundaries.'
+    description: 'Workstation configuration and Codex policy with a disposable-home preview and documented activation and rollback.'
   },
   'websites': {
-    description: 'Astro source for my portfolio, with project and evidence pages.'
+    description: 'Source for my Astro portfolio, documenting AI-assisted developer tooling and practical engineering work.'
   },
   'wSearch': {
     description: 'Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.'

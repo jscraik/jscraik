@@ -42,8 +42,8 @@ By **harness**, I mean the operating layer around coding agents: entrypoints, re
 
 * **[Agent Skills Kit (Agent-Skills)](https://github.com/jscraik/Agent-Skills)** - Transitional skills kit being separated from the independent Skills SDK and Skills Foundry. The README explains current ownership and migration limits.
 * **[mKit](https://github.com/jscraik/mKit)** - MCP server boilerplate for Cloudflare Workers.
-* **[websites](https://github.com/jscraik/websites)** - Astro source for my portfolio, with project and evidence pages.
-* **[dots](https://github.com/jscraik/dots)** - Workstation configuration and Codex policy with a disposable-home preview and explicit activation boundaries.
+* **[websites](https://github.com/jscraik/websites)** - Source for my Astro portfolio, documenting AI-assisted developer tooling and practical engineering work.
+* **[dots](https://github.com/jscraik/dots)** - Workstation configuration and Codex policy with a disposable-home preview and documented activation and rollback.
 * **[wSearch](https://github.com/jscraik/wSearch)** - Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.
 * **[aStudio (Design-System)](https://github.com/jscraik/Design-System)** - UI workbench and component system for ChatGPT widgets and React apps.
 
