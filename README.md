@@ -67,7 +67,6 @@ Codex, OpenAI, MCP, TypeScript, Node.js, React, Tauri, Swift, SwiftUI, Python, B
 
 | Project | Why it matters | Signal |
 |---|---|---|
-| [coding-harness](https://github.com/jscraik/coding-harness) | synAIpse AI Delivery Harness: a CLI control plane for agent-ready repos, runtime evidence, review gates, and safer PR handoff. | active |
 | [Agent-Skills](https://github.com/jscraik/Agent-Skills) | Skills SDK for authoring, routing, validating, packaging, and syncing Codex skills and plugins. | 10 stars |
 | [ralph-gold](https://github.com/jscraik/ralph-gold) | Deterministic fresh-agent loop with file-based memory, gates, receipts, context snapshots, and review exit rules. | 3 stars |
 | [diagram-cli](https://github.com/jscraik/diagram-cli) | Architecture evidence CLI for PR review, repo orientation, agent handoff, policy validation, and Mermaid diagrams. | active |
@@ -99,10 +98,10 @@ wsearch --help
 
 ## More Projects
 
+* **[websites](https://github.com/jscraik/websites)** - Source for Jamie Scott Craik's Astro portfolio, documenting AI-assisted developer tooling and practical engineering work.
+* **[dots](https://github.com/jscraik/dots)** - Workstation configuration and Codex policy with a disposable-home preview and documented activation and rollback.
 * **[skillsproof](https://github.com/jscraik/skillsproof)** - Native macOS menu-bar prototype for inspecting Skills SDK evidence and validation results.
-* **[dots](https://github.com/jscraik/dots)**
 * **[skills-sdk](https://github.com/jscraik/skills-sdk)** - Independent Python SDK and CLI for validating, evaluating and preparing AI agent skills and plugins, with versioned contracts, candidate-bound evidence and portable integration adapters.
-* **[websites](https://github.com/jscraik/websites)**
 * **[Design-System](https://github.com/jscraik/Design-System)** - Cross-platform UI workbench and component system for ChatGPT widgets and React apps.
 
 ## The Search Family
