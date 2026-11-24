@@ -12,18 +12,18 @@ Validation command:
 python3 /Users/jamiecraik/.codex/scripts/plan-graph-lint.py .agent/PLANS.md
 ```
 
-Valid sample plan:
+Current documentation task (24 November 2026):
 
 ```yaml
 tasks:
   - id: T1
-    title: Define scope and constraints
+    title: Inspect public sources and preserve the current repository contract
     depends_on: []
   - id: T2
-    title: Implement scaffold updates
+    title: Refresh the generated profile and public project entry points
     depends_on: [T1]
   - id: T3
-    title: Run verification and publish report
+    title: Run focused validation and prepare the signed-delivery handoff
     depends_on: [T2]
 ```
 
