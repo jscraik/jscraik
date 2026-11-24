@@ -34,7 +34,7 @@ Twenty-two years in Army logistics, leadership and instruction shaped how I appr
 
 I'm developing practical experience in developer tooling, AI-assisted workflows and technical education. I set direction, question assumptions, inspect the implementation and remain accountable for what ships.
 
-By **harness**, I mean the operating layer around coding agents: entrypoints, repository checks, evidence, review policy and handoffs. [SynAIpse](https://github.com/jscraik/coding-harness) is the public project where I apply that work.
+By **harness**, I mean the operating layer around coding agents: entrypoints, repository checks, evidence, review policy and handoffs.
 
 **Working stack:** Python, TypeScript, Node.js, React, Swift/SwiftUI, macOS, Codex, MCP, GitHub Actions and CircleCI.
 
@@ -58,6 +58,8 @@ By **harness**, I mean the operating layer around coding agents: entrypoints, re
 ## Learning In Public
 
 Archived experiments remain available as historical source. Their archive status does not imply current support or compatibility.
+
+- [SynAIpse (Coding Harness)](https://github.com/jscraik/coding-harness) is retired. The repository records my earlier work on evidence-backed delivery.
 
 * **[xKit](https://github.com/jscraik/xKit)** - Unofficial X Web API Toolkit
 

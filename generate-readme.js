@@ -36,7 +36,6 @@ const SOCIAL_LINKS = {
 // Manual featured projects (always included regardless of update time)
 const FEATURED_REPOS = [
   'skills-sdk',
-  'coding-harness',
   'skillsproof',
   'diagram-cli',
   'rSearch',
@@ -55,12 +54,6 @@ const REPO_DISPLAY_OVERRIDES = {
     description: 'Python contracts and a local CLI for checking Agent Skills packages. Early contract-building work; validation limits are explicit.',
     entryLabel: 'Inspect the synthetic skill fixture',
     entryPath: 'tree/main/tests/fixtures/synthetic-skill'
-  },
-  'coding-harness': {
-    label: 'SynAIpse (coding-harness)',
-    description: 'A CLI for repository checks, next actions and evidence-backed handoffs in AI-assisted engineering.',
-    entryLabel: 'Follow the quickstart',
-    entryPath: 'blob/main/docs/agents/quickstart.md'
   },
   'skillsproof': {
     label: 'SkillsProof',
@@ -203,6 +196,7 @@ function filterActiveRepos(repos) {
 
     // Skip archived repos from active listings
     if (repo.archived) return false;
+    if (repo.name === 'coding-harness') return false;
 
     // Skip explicitly excluded repos
     if (EXCLUDED_REPOS.includes(repo.name)) return false;
@@ -306,7 +300,7 @@ function buildFeaturedProjectsTable(featuredRepos) {
  */
 function generateReadmeContent(userProfile, activeRepos, allRepos = activeRepos) {
   const isoDate = generateISODate();
-  const archivedRepos = allRepos.filter((repo) => repo.archived && !EXCLUDED_REPOS.includes(repo.name));
+  const archivedRepos = allRepos.filter((repo) => repo.archived && repo.name !== 'coding-harness' && !EXCLUDED_REPOS.includes(repo.name));
   const featuredRepos = activeRepos.filter((repo) => FEATURED_REPOS.includes(repo.name));
   const moreRepos = activeRepos.filter((repo) => !FEATURED_REPOS.includes(repo.name));
   const featuredProjectsTable = buildFeaturedProjectsTable(featuredRepos);
@@ -343,7 +337,7 @@ Twenty-two years in Army logistics, leadership and instruction shaped how I appr
 
 I'm developing practical experience in developer tooling, AI-assisted workflows and technical education. I set direction, question assumptions, inspect the implementation and remain accountable for what ships.
 
-By **harness**, I mean the operating layer around coding agents: entrypoints, repository checks, evidence, review policy and handoffs. [SynAIpse](https://github.com/${USERNAME}/coding-harness) is the public project where I apply that work.
+By **harness**, I mean the operating layer around coding agents: entrypoints, repository checks, evidence, review policy and handoffs.
 
 **Working stack:** Python, TypeScript, Node.js, React, Swift/SwiftUI, macOS, Codex, MCP, GitHub Actions and CircleCI.
 
@@ -362,6 +356,8 @@ ${moreProjectsList}
 ${ARCHIVED_SECTION_TITLE}
 
 Archived experiments remain available as historical source. Their archive status does not imply current support or compatibility.
+
+- [SynAIpse (Coding Harness)](https://github.com/${USERNAME}/coding-harness) is retired. The repository records my earlier work on evidence-backed delivery.
 
 ${archivedProjectsList || '* No archived projects currently listed.'}
 
