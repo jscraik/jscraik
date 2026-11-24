@@ -14,11 +14,7 @@ Closes #[PROMPT: #123] (or explain why none exists)
 
 ## How to test
 
-[PROMPT: Exact commands + expected outcomes.]
-
-- [PROMPT: e.g. pnpm test]
-- [PROMPT: e.g. pnpm lint]
-- [PROMPT: e.g. pnpm build]
+[PROMPT: List each exact validation command and its pass, fail or blocked outcome. Explain failures and blockers.]
 
 ## Risk & rollout
 
@@ -36,9 +32,10 @@ Rollback plan: [PROMPT: Concrete rollback steps if needed.]
 ## AI assistance
 
 - [ ] This PR was created with AI assistance (mark with `[AI]` in title if applicable)
-- [ ] Testing level: untested / lightly tested / fully tested
 - [ ] I understand what the code does and can explain it
 - [ ] Prompts or session logs included (Optional, but helpful)
+
+- Testing level: [PROMPT: untested, lightly tested or fully tested]
 
 Prompt: `[PROMPT: ai/prompts/YYYY-MM-DD-<slug>.yaml]`
 Session: `[PROMPT: ai/sessions/YYYY-MM-DD-<slug>.json]`
