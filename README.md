@@ -14,11 +14,6 @@ Choose a task or inspect a concrete example. Each repository explains its curren
 
 | Project | What you can inspect or try | Start here |
 |---|---|---|
-| [Skills SDK](https://github.com/jscraik/skills-sdk) | Python contracts and a local CLI for checking Agent Skills packages. Early contract-building work; validation limits are explicit. | [Inspect the synthetic skill fixture](https://github.com/jscraik/skills-sdk/tree/main/tests/fixtures/synthetic-skill) |
-| [SkillsProof](https://github.com/jscraik/skillsproof) | Native macOS menu-bar prototype for inspecting Skills SDK evidence. Includes a clearly labelled demo fixture. | [Inspect the demo guide](https://github.com/jscraik/skillsproof/blob/main/DEMO.md) |
-| [Archscope (diagram-cli)](https://github.com/jscraik/diagram-cli) | Architecture evidence and reports for repository orientation, PR review and agent handoff. | [Generate a first report](https://github.com/jscraik/diagram-cli/blob/main/README.md#quick-start) |
-| [rSearch](https://github.com/jscraik/rSearch) | Search, fetch and download arXiv papers from the terminal, with a TypeScript client. | [Run a first paper search](https://github.com/jscraik/rSearch/blob/main/README.md#quickstart) |
-| [ralph-gold](https://github.com/jscraik/ralph-gold) | Agent-loop orchestration with durable task state, validation gates and receipts. | [Read the setup and first-task guide](https://github.com/jscraik/ralph-gold/blob/main/README.md) |
 
 ## How the Skills Projects Fit Together
 
@@ -38,15 +33,6 @@ By **harness**, I mean the operating layer around coding agents: entrypoints, re
 
 **Working stack:** Python, TypeScript, Node.js, React, Swift/SwiftUI, macOS, Codex, MCP, GitHub Actions and CircleCI.
 
-## More Projects
-
-* **[Agent Skills Kit (Agent-Skills)](https://github.com/jscraik/Agent-Skills)** - Transitional skills kit being separated from the independent Skills SDK and Skills Foundry. The README explains current ownership and migration limits.
-* **[mKit](https://github.com/jscraik/mKit)** - MCP server boilerplate for Cloudflare Workers.
-* **[websites](https://github.com/jscraik/websites)** - Source for my Astro portfolio, documenting AI-assisted developer tooling and practical engineering work.
-* **[dots](https://github.com/jscraik/dots)** - Workstation configuration and Codex policy with a disposable-home preview and documented activation and rollback.
-* **[wSearch](https://github.com/jscraik/wSearch)** - Script-friendly Wikidata REST, SPARQL, and Action API queries from the terminal.
-* **[aStudio (Design-System)](https://github.com/jscraik/Design-System)** - UI workbench and component system for ChatGPT widgets and React apps.
-
 ## Work With Me On
 
 - Practical developer tools and CLI workflows.
@@ -61,10 +47,10 @@ Archived experiments remain available as historical source. Their archive status
 
 - [SynAIpse (Coding Harness)](https://github.com/jscraik/coding-harness) is retired. The repository records my earlier work on evidence-backed delivery.
 
-* **[xKit](https://github.com/jscraik/xKit)** - Unofficial X Web API Toolkit
+* No archived projects currently listed.
 
 ---
 
-**Content reviewed:** 2026-11-24 · **Public repository inventory refreshed:** 2026-11-25
+**Content reviewed:** 2026-11-24 · **Public repository inventory refreshed:** 2026-11-26
 
 This profile is generated from [generate-readme.js](generate-readme.js). The inventory refresh date records generation, not a new test run or editorial review.
