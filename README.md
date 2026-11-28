@@ -65,6 +65,6 @@ Archived experiments remain available as historical source. Their archive status
 
 ---
 
-**Content reviewed:** 2026-11-24 · **Public repository inventory refreshed:** 2026-11-27
+**Content reviewed:** 2026-11-24 · **Public repository inventory refreshed:** 2026-11-28
 
 This profile is generated from [generate-readme.js](generate-readme.js). The inventory refresh date records generation, not a new test run or editorial review.
